@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.navbar,
+.navbar section ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 40px;
+}
+
+.navbar{
+    padding: 40px 0px;
+}
+
+.navbar section ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: all .5s ease;
+    padding: 10px;
+}
+
+.navbar section ul li a:hover{
+    cursor: pointer;
+    border-bottom: 2px solid white;
+}
