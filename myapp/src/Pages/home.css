@@ -52,7 +52,7 @@
     transform: rotate(90deg);
     border-top: 150px solid rgb(0, 157, 255);
     border-left: 150px solid rgb(0, 157, 255);
-
+    z-index: -1;
     animation-name: circling;
     animation-duration: 4s;
     animation-delay: 1s;

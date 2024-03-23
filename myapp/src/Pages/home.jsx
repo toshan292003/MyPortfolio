@@ -16,7 +16,6 @@ export default function Home() {
             <div className="home">
                 <section className="home-part1">
                     <div className="circle">
-
                     </div>
                     <div>
                         <h2>Hello I'm <b>TOSHAN S MAINDAN</b></h2>
