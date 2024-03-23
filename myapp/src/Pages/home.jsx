@@ -1,7 +1,7 @@
 import React from "react";
 import './home.css';
 import {useTypewriter,Cursor} from 'react-simple-typewriter';
-
+import HomePage from './HomePagePortrait.jpg';
 export default function Home() {
 
     const RESUME_PDF_FILE = "http://localhost:3000/Resume.pdf";
@@ -33,6 +33,7 @@ export default function Home() {
                         <span>{typeEffect}<Cursor cursorStyle='|'/></span>
                         <button onClick={() => downloadFile(RESUME_PDF_FILE)}>Download Resume</button>
                     </div>
+                    <img src={HomePage} alt="" />
                 </section>
                 <section className="home-part2">
                 </section>
