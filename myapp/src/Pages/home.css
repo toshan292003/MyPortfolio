@@ -1,0 +1,64 @@
+.home{
+
+}
+
+.home-part1{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+    background: url("../Images/1x/HomeBackgroundArtboard\ 1.png");
+    background-size: cover;
+    z-index: -5;
+    background-repeat: no-repeat;
+    padding: 0px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #888888;
+
+    overflow: hidden;
+}
+
+.home-part1 div span{
+    color: white;
+}
+
+.home-part1 div{
+    z-index: 10;
+}
+
+.circle {
+    position: absolute;
+    height: 900px;
+    width: 900px;
+    left: -300px;
+    bottom: 50px;
+    border-radius: 50%;
+    border: 150px solid transparent;
+    transform: rotate(90deg);
+    border-bottom: 150px solid rgb(0, 157, 255);
+
+    animation-name: circling;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-timing-function: cubic-bezier(0.56, 0.29, 0.33, 0.63);
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes circling{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.home-part2{
+    height: 1000px;
+}

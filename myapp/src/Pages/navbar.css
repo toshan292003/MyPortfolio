@@ -21,6 +21,9 @@
 
 .navbar{
     padding: 40px 0px;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
 }
 
 .navbar section ul li a{
@@ -32,8 +35,6 @@
     transition: all .5s ease;
     padding: 10px;
 }
-
-
 
 .navbar section ul li a:hover{
     cursor: pointer;
