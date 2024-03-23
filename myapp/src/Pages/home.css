@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Teko:wght@300..700&display=swap');
+
 .home{
 
 }
@@ -23,6 +27,13 @@
 }
 
 .home-part1 div span{
+    font-family: "Outfit", sans-serif;
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgb(0, 157, 255);
+}
+
+.home-part1 b{
     color: white;
 }
 
@@ -32,14 +43,15 @@
 
 .circle {
     position: absolute;
-    height: 900px;
-    width: 900px;
-    left: -300px;
-    bottom: 50px;
+    height: 1100px;
+    width: 1100px;
+    left: -230px;
+    bottom: -630px;
     border-radius: 50%;
     border: 150px solid transparent;
     transform: rotate(90deg);
-    border-bottom: 150px solid rgb(0, 157, 255);
+    border-top: 150px solid rgb(0, 157, 255);
+    border-left: 150px solid rgb(0, 157, 255);
 
     animation-name: circling;
     animation-duration: 4s;
