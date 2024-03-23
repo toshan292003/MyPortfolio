@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 .navbar,
+.navbar section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 200px;
+}
+
 .navbar section ul{
     display: flex;
     flex-direction: row;
@@ -23,6 +32,8 @@
     transition: all .5s ease;
     padding: 10px;
 }
+
+
 
 .navbar section ul li a:hover{
     cursor: pointer;
