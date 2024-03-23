@@ -12,7 +12,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 600px;
+    height: 100vh;
     background: url("../Images/1x/HomeBackgroundArtboard\ 1.png");
     background-size: cover;
     z-index: -5;
