@@ -1,7 +1,7 @@
 import React from "react";
 import './home.css';
 import {useTypewriter,Cursor} from 'react-simple-typewriter';
-import HomePage from './HomePagePortrait.jpg';
+import HomePage from './HomePagePortrait.png';
 export default function Home() {
 
     const RESUME_PDF_FILE = "http://localhost:3000/Resume.pdf";
@@ -35,7 +35,7 @@ export default function Home() {
                     </div>
                     <img src={HomePage} alt="" />
                 </section>
-                <section className="home-part2">
+                <section className="home-part2" id="home2">
                 </section>
             </div>
         </>

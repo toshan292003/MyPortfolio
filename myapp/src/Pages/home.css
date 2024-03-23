@@ -73,8 +73,8 @@
     position: absolute;
     height: 1100px;
     width: 1100px;
-    left: -230px;
-    bottom: -630px;
+    left: -210px;
+    bottom: -550px;
     border-radius: 50%;
     border: 150px solid transparent;
     transform: rotate(90deg);
@@ -82,8 +82,8 @@
     border-left: 150px solid rgb(0, 157, 255);
     z-index: -10;
     animation-name: circling;
-    animation-duration: 4s;
-    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-delay: 2s;
     animation-timing-function: cubic-bezier(0.56, 0.29, 0.33, 0.63);
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
@@ -100,6 +100,13 @@
     }
 }
 
+.home-part1 img{
+    position: absolute;
+    top: -50px;
+    right: 50px;
+    height: 1200px;
+    z-index: 10;
+}
 
 .home-part2{
     height: 1000px;
