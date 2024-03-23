@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Teko:wght@300..700&display=swap');
 
 .home{
-
+    z-index: -10;
 }
 
 .home-part1{
@@ -15,7 +15,7 @@
     height: 100vh;
     background: url("../Images/1x/HomeBackgroundArtboard\ 1.png");
     background-size: cover;
-    z-index: -5;
+    z-index: 1;
     background-repeat: no-repeat;
     padding: 0px 200px;
     display: flex;
@@ -24,6 +24,11 @@
     color: #888888;
 
     overflow: hidden;
+}
+
+.home-part1 div{
+    display: flex;
+    flex-direction: column;
 }
 
 .home-part1 div span{
@@ -41,6 +46,29 @@
     z-index: 10;
 }
 
+.home-part1 button{
+    background-color: rgb(0, 157, 255);
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: relative;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    width: 250px;
+    font-family: "Poppins",sans-serif;
+    margin: 20px 0px;
+    z-index: 10;
+    border: 3px solid transparent;
+    transition: all .5s ease;
+}
+
+.home-part1 button:hover{
+    border-bottom: 3px solid white;
+    background-color: #151515;
+    cursor: pointer;
+}
+
 .circle {
     position: absolute;
     height: 1100px;
@@ -52,7 +80,7 @@
     transform: rotate(90deg);
     border-top: 150px solid rgb(0, 157, 255);
     border-left: 150px solid rgb(0, 157, 255);
-    z-index: -1;
+    z-index: -10;
     animation-name: circling;
     animation-duration: 4s;
     animation-delay: 1s;
