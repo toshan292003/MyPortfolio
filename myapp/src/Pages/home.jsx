@@ -6,6 +6,7 @@ import {useTypewriter,Cursor} from 'react-simple-typewriter';
 //importing components and pages
 import HomePage from './HomePagePortrait.png';
 import About from './AboutPage.png';
+import AboutBg from '../Images/1x/HomeBackgroundArtboard 1 copy.png';
 import './home.css';
 import CoolHeading from "../components/CoolHeading";
 
@@ -52,14 +53,44 @@ export default function Home() {
                     <div className="gradient1"></div>
                     <div className="gradient2"></div>
                     <CoolHeading title="about me" subtitle="who am i"></CoolHeading>
-                    <section>
-                        <b>
+                    <p>
+                        <section>
                             <img src={About} alt="" />
-                        </b>
-                        <div>
-                            
-                        </div>
-                    </section>
+                            <img src={AboutBg} alt="" />
+                            <h1>Something About Me</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa ab reiciendis sit reprehenderit ea soluta illo quae obcaecati quaerat, expedita enim nisi temporibus cum officiis quam error sed eligendi necessitatibus voluptatum ipsam corporis. Aperiam dicta vitae eum. Dolorum nisi inventore ut tempora beatae totam aspernatur, error fugit quisquam soluta quod!</p>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <h3>Name</h3>
+                                        <span>Toshan S Maindan</span>
+                                    </li>
+                                    <li>
+                                        <h3>Email</h3>
+                                        <span>toshanyt@gmail.com</span>
+                                    </li>
+                                    <li>
+                                        <h3>Phone</h3>
+                                        <span>+91 8549039062</span>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <h3>Adress</h3>
+                                        <span>Mangalore</span>
+                                    </li>
+                                    <li>
+                                        <h3>DOB</h3>
+                                        <span>02 Sept 2003</span>
+                                    </li>
+                                    <li>
+                                        <h3>Occupation</h3>
+                                        <span>Student</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </p>
                 </section>
 
 
