@@ -13,17 +13,19 @@
     align-items: center;
     justify-content: space-between;
     height: 100vh;
-    background: url("../Images/1x/HomeBackgroundArtboard\ 1.png");
-    background-size: cover;
     z-index: 1;
-    background-repeat: no-repeat;
     padding: 0px 200px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     color: #888888;
-
     overflow: hidden;
+}
+
+.homebackimage img{
+    top: 0px;
+    left: 0px;
+    width: 100vw !important;
 }
 
 .home-part1 div{
