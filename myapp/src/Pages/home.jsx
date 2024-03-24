@@ -9,6 +9,7 @@ import AboutBg from '../Images/1x/HomeBackgroundArtboard 1 copy.png';
 import './home.css';
 import CoolHeading from "../components/CoolHeading";
 import homebackimage from '../Images/1x/HomeBackgroundArtboard\ 1.png';
+import Progress from "../components/Progress";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -151,6 +152,12 @@ export default function Home() {
 
                 <section className="home-part4">
                     <CoolHeading title="what i bring to the table" subtitle="my skillset"></CoolHeading>
+                    <section>
+                        <Progress title="JavaScript" percentage="90"></Progress>
+                        <Progress title="C++" percentage="80"></Progress>
+                        <Progress title="React" percentage="90"></Progress>
+                        <Progress title="C" percentage="60"></Progress>
+                    </section>
                 </section>
             </div>
         </>
