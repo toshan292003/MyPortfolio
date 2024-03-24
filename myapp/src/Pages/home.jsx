@@ -62,7 +62,7 @@ export default function Home() {
                         <span>{typeEffect}<Cursor cursorStyle='|'/></span>
                         <button onClick={() => downloadFile(RESUME_PDF_FILE)}>Download Resume</button>
                     </div>
-                    <img src={HomePage} style={{transform:`translateY(${ OffsetY*0.25}px)`}} alt="" />
+                    <img src={HomePage} alt="" />
                 </section>
 
 
@@ -73,7 +73,7 @@ export default function Home() {
                     <CoolHeading title="about me" subtitle="who am i"></CoolHeading>
                     <p>
                         <section>
-                            <img src={About} style={{transform:`translateY(${-250+ OffsetY*0.25}px)`}} alt="" />
+                            <img src={About} alt="" />
                             <img src={AboutBg} alt="" />
                             <h1 data-aos = "fade-up">Something About Me</h1>
                             <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa ab reiciendis sit reprehenderit ea soluta illo quae obcaecati quaerat, expedita enim nisi temporibus cum officiis quam error sed eligendi necessitatibus voluptatum ipsam corporis. Aperiam dicta vitae eum. Dolorum nisi inventore ut tempora beatae totam aspernatur, error fugit quisquam soluta quod!</p>
@@ -116,30 +116,33 @@ export default function Home() {
                 <section className="home-part3">
                     <CoolHeading title="My education" subtitle="Learning journey"></CoolHeading>
                     <section>
-                        <div className="line"></div>
-                        <div className="education">
+                        <div className="line" data-aos="zoom"></div>
+                        <div className="education" data-aos="fade-up">
+                            <h3></h3>
+                            <span>2019</span>
                             <div>
-                                <h1>Hgih School Graduate</h1>
-                                <h2>Sharada Vidyalaya Mangalore</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta laboriosam ea adipisci minus officia vitae quis quae maiores unde.</p>
+                                <h1 data-aos="fade-up">High School Graduate</h1>
+                                <h2 data-aos="fade-up">Sharada Vidyalaya Mangalore</h2>
+                                <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta laboriosam ea adipisci minus officia vitae quis quae maiores unde.</p>
                             </div>
-                            <span></span>
                         </div>
-                        <div className="education">
+                        <div className="education" data-aos="fade-up">
                             <div>
-                                <h1>Pre University Graduate</h1>
-                                <h2>Sharada PU College Mangalore</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta laboriosam ea adipisci minus officia vitae quis quae maiores unde.</p>
+                                <h1 data-aos="fade-up">Pre University Graduate</h1>
+                                <h2 data-aos="fade-up">Sharada PU College Mangalore</h2>
+                                <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta laboriosam ea adipisci minus officia vitae quis quae maiores unde.</p>
                             </div>
-                            <span></span>
+                            <span>2021</span>
+                            <h3></h3>
                         </div>
-                        <div className="education">
+                        <div className="education" data-aos="fade-up">
+                            <h3></h3>
+                            <span>2025</span>
                             <div>
-                                <h1>Bachelor Of Engineering</h1>
-                                <h2>Sahyadri College of Engineering and Management</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta laboriosam ea adipisci minus officia vitae quis quae maiores unde.</p>
+                                <h1 data-aos="fade-up">Bachelor Of Engineering</h1>
+                                <h2 data-aos="fade-up">Sahyadri Management</h2>
+                                <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta laboriosam ea adipisci minus officia vitae quis quae maiores unde.</p>
                             </div>
-                            <span></span>
                         </div>
                     </section>
                 </section>
