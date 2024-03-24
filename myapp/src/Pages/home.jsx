@@ -115,6 +115,33 @@ export default function Home() {
 
                 <section className="home-part3">
                     <CoolHeading title="My education" subtitle="Learning journey"></CoolHeading>
+                    <section>
+                        <div className="line"></div>
+                        <div className="education">
+                            <div>
+                                <h1>Hgih School Graduate</h1>
+                                <h2>Sharada Vidyalaya Mangalore</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta laboriosam ea adipisci minus officia vitae quis quae maiores unde.</p>
+                            </div>
+                            <span></span>
+                        </div>
+                        <div className="education">
+                            <div>
+                                <h1>Pre University Graduate</h1>
+                                <h2>Sharada PU College Mangalore</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta laboriosam ea adipisci minus officia vitae quis quae maiores unde.</p>
+                            </div>
+                            <span></span>
+                        </div>
+                        <div className="education">
+                            <div>
+                                <h1>Bachelor Of Engineering</h1>
+                                <h2>Sahyadri College of Engineering and Management</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta laboriosam ea adipisci minus officia vitae quis quae maiores unde.</p>
+                            </div>
+                            <span></span>
+                        </div>
+                    </section>
                 </section>
 
 
