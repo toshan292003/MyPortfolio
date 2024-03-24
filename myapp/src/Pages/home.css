@@ -35,7 +35,7 @@
     font-family: "Outfit", sans-serif;
     font-size: 5rem;
     font-weight: 800;
-    color: rgb(0, 157, 255);
+    color: var(--primaryColor);
 }
 
 .home-part1 b{
@@ -47,7 +47,7 @@
 }
 
 .home-part1 button{
-    background-color: rgb(0, 157, 255);
+    background-color: var(--primaryColor);
     color: white;
     font-weight: 600;
     font-size: 1.1rem;
@@ -78,8 +78,8 @@
     border-radius: 50%;
     border: 150px solid transparent;
     transform: rotate(90deg);
-    border-top: 150px solid rgb(0, 157, 255);
-    border-left: 150px solid rgb(0, 157, 255);
+    border-top: 150px solid var(--primaryColor);
+    border-left: 150px solid var(--primaryColor);
     z-index: -10;
     animation-name: circling;
     animation-duration: 3s;
@@ -109,5 +109,32 @@
 }
 
 .home-part2{
-    height: 1000px;
+    position: relative;
+    overflow: hidden;
+    z-index: -20;
+}
+
+.gradient1,
+.gradient2{
+    background: radial-gradient(rgba(0, 157, 255, 0.3), #129dff00, transparent);
+    height: 1500px;
+    width: 1500px;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -10;
+}
+
+.gradient1{
+    top: -790px;
+    left: -810px;
+}
+.gradient2{
+    bottom: -790px;
+    right: -810px;
+}
+
+.home-part2 img{
+    position: absolute;
+    left: 100px;
+    height: 800px;
 }

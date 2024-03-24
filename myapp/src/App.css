@@ -1,6 +1,8 @@
 *{
   margin: 0;
   padding: 0;
+
+  --primaryColor : rgb(0,157,255);
 }
 
 body{

@@ -1,9 +1,19 @@
+//importing basic react requirements and libraries
 import React from "react";
-import './home.css';
 import {useTypewriter,Cursor} from 'react-simple-typewriter';
+
+
+//importing components and pages
 import HomePage from './HomePagePortrait.png';
+import About from './AboutPage.png';
+import './home.css';
+import CoolHeading from "../components/CoolHeading";
+
+
+
 export default function Home() {
 
+    //function for download option in home page seciton 1
     const RESUME_PDF_FILE = "http://localhost:3000/Resume.pdf";
     const downloadFile = (url)=>{
         const fileName = url.split("/").pop();
@@ -14,7 +24,7 @@ export default function Home() {
         aTag.click();
         aTag.remove();
     };
-
+    //typewriter effect in home page section 1
     const [typeEffect] = useTypewriter({
         words : ['Full Stack Developer','UI/UX Designer','Graphic Designer','Student'],
         loop:{},
@@ -35,7 +45,27 @@ export default function Home() {
                     </div>
                     <img src={HomePage} alt="" />
                 </section>
-                <section className="home-part2" id="home2">
+
+
+
+                <section className="home-part2">
+                    <div className="gradient1"></div>
+                    <div className="gradient2"></div>
+                    <CoolHeading title="about me" subtitle="who am i"></CoolHeading>
+                    <section>
+                        <b>
+                            <img src={About} alt="" />
+                        </b>
+                        <div>
+                            
+                        </div>
+                    </section>
+                </section>
+
+
+
+                <section className="home-part3">
+                    <CoolHeading title="what i bring to the table" subtitle="my skillset"></CoolHeading>
                 </section>
             </div>
         </>

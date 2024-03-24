@@ -1,0 +1,25 @@
+.coolheading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding:100px;
+}
+
+.coolheading h1{
+    text-transform: uppercase;
+    position: relative;
+    top: 7px;
+    color: var(--primaryColor);
+    font-size: 3rem;
+}
+
+.coolheading span{
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    font-size: 8rem;
+    font-weight: bold;
+    z-index: -10;
+}
