@@ -103,7 +103,7 @@
 .home-part1 img{
     position: absolute;
     top: -50px;
-    right: 50px;
+    right: 5vw;
     height: 1200px;
     z-index: 10;
 }
