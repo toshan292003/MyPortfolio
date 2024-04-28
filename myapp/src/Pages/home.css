@@ -53,6 +53,10 @@
     z-index: 10;
 }
 
+a{
+    text-decoration: none;
+}
+
 .home-part1 button,
 .home-5 button{
     background-color: var(--primaryColor);
@@ -349,35 +353,41 @@
     color: rgb(162, 162, 162);
 }
 
+
 .home-5{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    background: url("https://images.pexels.com/photos/355948/pexels-photo-355948.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    background-size: cover;
-    background-position: center;
-    gap: 20px;
+}
+
+.home-5 div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 40px;
     font-size: 1.5rem;
+}
+
+.home-5 div section img{
     height: 400px;
 }
 
-.home-5::before{
-    position: absolute;
-    content: "";
-    height: 400px;
-    width: 100%;
-    background-color: var(--primaryColor);
-    mix-blend-mode: color;
+.home-5 div section{
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s ease;
 }
-.home-5::after{
-    position: absolute;
-    content: "";
-    height: 400px;
-    opacity: 50%;
-    width: 100%;
-    background-color: white;
+
+.home-5 div section:hover{
+    transform: scale(103%);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .home-5 p,
@@ -385,3 +395,4 @@
     color: black;
     z-index: 10;
 }
+

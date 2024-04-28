@@ -186,9 +186,28 @@ export default function Home() {
                 </section>
 
                 <section className="home-5">
-                    <h1>HAVE A PROJECT IN MIND ?</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, sed.</p>
-                    <button>Contact Me</button>
+                    <CoolHeading title="My Recent Projects" subtitle="my works"></CoolHeading>
+                    <div>
+                        <section>
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/f80d2976380535.5c6ec29d82ff7.png" alt="" />
+                        </section>
+                        <section>
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/f80d2976380535.5c6ec29d82ff7.png" alt="" />
+                        </section>
+                        <section>
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/f80d2976380535.5c6ec29d82ff7.png" alt="" />
+                        </section>
+                        <section>
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/f80d2976380535.5c6ec29d82ff7.png" alt="" />
+                        </section>
+                        <section>
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/f80d2976380535.5c6ec29d82ff7.png" alt="" />
+                        </section>
+                        <section>
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/f80d2976380535.5c6ec29d82ff7.png" alt="" />
+                        </section>
+                    </div>
+                    <button><a href="">Browse Portfolio</a></button>
                 </section>
             </div>
         </>
