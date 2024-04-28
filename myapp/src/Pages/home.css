@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Teko:wght@300..700&display=swap');
 
+*{
+    font-family: "Poppins",sans-serif;
+    color: white;
+}
+
 .home{
     z-index: -10;
 }
@@ -48,7 +53,8 @@
     z-index: 10;
 }
 
-.home-part1 button{
+.home-part1 button,
+.home-5 button{
     background-color: var(--primaryColor);
     color: white;
     font-weight: 600;
@@ -65,7 +71,8 @@
     transition: all .5s ease;
 }
 
-.home-part1 button:hover{
+.home-part1 button:hover,
+.home-5 button:hover{
     border-bottom: 3px solid white;
     background-color: #151515;
     cursor: pointer;
@@ -309,5 +316,72 @@
     justify-content: center;
     flex-wrap: wrap;
     max-width: 80vw;
-    gap: 100px;
+    gap: 50px;
+}
+
+.home-part4 section div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Poppins",sans-serif;
+    gap: 20px;
+    max-width: 400px;
+    text-align: center;
+    background-color: #151515;
+    padding: 40px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.181);
+    border-radius: 10px;
+}
+
+.home-part4 img{
+    height: 100px;
+}
+
+.home-part4 h1{
+    font-size: 1.7rem;
+    color: var(--primaryColor);
+}
+
+.home-part4 p{
+    font-weight: 300;
+    color: rgb(162, 162, 162);
+}
+
+.home-5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: url("https://images.pexels.com/photos/355948/pexels-photo-355948.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    gap: 20px;
+    font-size: 1.5rem;
+    height: 400px;
+}
+
+.home-5::before{
+    position: absolute;
+    content: "";
+    height: 400px;
+    width: 100%;
+    background-color: var(--primaryColor);
+    mix-blend-mode: color;
+}
+.home-5::after{
+    position: absolute;
+    content: "";
+    height: 400px;
+    opacity: 50%;
+    width: 100%;
+    background-color: white;
+}
+
+.home-5 p,
+.home-5 h1{
+    color: black;
+    z-index: 10;
 }

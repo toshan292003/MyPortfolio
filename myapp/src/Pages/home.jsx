@@ -11,6 +11,12 @@ import CoolHeading from "../components/CoolHeading";
 import homebackimage from '../Images/1x/HomeBackgroundArtboard\ 1.png';
 import Progress from "../components/Progress";
 
+import DSA from "../Images/Icons/data.png";
+import Graphic from "../Images/Icons/editorial.png";
+import Dev from "../Images/Icons/coding.png";
+import Motion from "../Images/Icons/lightning.png";
+import Design from "../Images/Icons/webpage.png";
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -148,16 +154,41 @@ export default function Home() {
                     </section>
                 </section>
 
-
-
                 <section className="home-part4">
                     <CoolHeading title="what i bring to the table" subtitle="my skillset"></CoolHeading>
                     <section>
-                        <Progress title="JavaScript" percentage="90"></Progress>
-                        <Progress title="C++" percentage="80"></Progress>
-                        <Progress title="React" percentage="90"></Progress>
-                        <Progress title="C" percentage="60"></Progress>
+                        <div className="card" data-aos="fade-up">
+                            <img src={DSA} alt="" />
+                            <h1>DSA Expertise</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, commodi.</p>
+                        </div>
+                        <div className="card" data-aos="fade-up">
+                            <img src={Design} alt=""/>
+                            <h1>Web Design</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, commodi.</p>
+                        </div>
+                        <div className="card" data-aos="fade-up">
+                            <img src={Dev} alt="" />
+                            <h1>Web Development</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, commodi.</p>
+                        </div>
+                        <div className="card" data-aos="fade-up">
+                            <img src={Graphic} alt="" />
+                            <h1>Graphic Design</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, commodi.</p>
+                        </div>
+                        <div className="card" data-aos="fade-up">
+                            <img src={Motion} alt="" />
+                            <h1>Motion Graphics</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, commodi.</p>
+                        </div>
                     </section>
+                </section>
+
+                <section className="home-5">
+                    <h1>HAVE A PROJECT IN MIND ?</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, sed.</p>
+                    <button>Contact Me</button>
                 </section>
             </div>
         </>
