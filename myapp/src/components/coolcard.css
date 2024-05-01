@@ -1,0 +1,40 @@
+.coolcard{
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.coolcard div{
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgba(0, 157, 255, 0.75);
+    transition: all 1s ease;
+    position: absolute;
+}
+
+.coolcard div:hover{
+    cursor: pointer;
+}
+
+.coolcard img{
+    width: 100%;
+}
+
+.coolcard h1{
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    z-index: 10;
+    font-size: 2.5rem;
+    transition: all 0.5s ease;
+    top: 120px;
+    left: 110px;
+}
+
+.coolcard h1:hover{
+    cursor: pointer;
+}

@@ -10,6 +10,7 @@ import './home.css';
 import CoolHeading from "../components/CoolHeading";
 import homebackimage from '../Images/1x/HomeBackgroundArtboard\ 1.png';
 import Progress from "../components/Progress";
+import CoolCard from "../components/CoolCard";
 
 import DSA from "../Images/Icons/data.png";
 import Graphic from "../Images/Icons/editorial.png";
@@ -54,6 +55,16 @@ export default function Home() {
         typeSpeed : 100,
         deleteSpeed: 50
     })
+
+
+
+    const projects=[
+        {name:"Project 1", Image:"https://i.pinimg.com/564x/6e/ca/15/6eca15a37c66d0e2cdc52ae0ef4eecc2.jpg"},
+        {name:"Project 2", Image:"https://i.pinimg.com/564x/25/56/21/2556210e95b6e5d8debf48ce58678b07.jpg"},
+        {name:"Project 3", Image:"https://i.pinimg.com/564x/ad/c1/8f/adc18f7eb9df78a4ffa2f2441ae69b2d.jpg"},
+        {name:"Project 4", Image:"https://i.pinimg.com/236x/e3/75/48/e37548de31d5fe127f3028039efcd46d.jpg"},
+        {name:"Project 5", Image:"https://i.pinimg.com/236x/e3/75/48/e37548de31d5fe127f3028039efcd46d.jpg"}
+    ]
 
     return (
         <>
@@ -188,24 +199,11 @@ export default function Home() {
                 <section className="home-5">
                     <CoolHeading title="My Recent Projects" subtitle="my works"></CoolHeading>
                     <div>
-                        <section>
-                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/f80d2976380535.5c6ec29d82ff7.png" alt="" />
-                        </section>
-                        <section>
-                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/f80d2976380535.5c6ec29d82ff7.png" alt="" />
-                        </section>
-                        <section>
-                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/f80d2976380535.5c6ec29d82ff7.png" alt="" />
-                        </section>
-                        <section>
-                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/f80d2976380535.5c6ec29d82ff7.png" alt="" />
-                        </section>
-                        <section>
-                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/f80d2976380535.5c6ec29d82ff7.png" alt="" />
-                        </section>
-                        <section>
-                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/f80d2976380535.5c6ec29d82ff7.png" alt="" />
-                        </section>
+                        {
+                            projects.map((i)=>(
+                                <CoolCard Image={i.Image} name={i.name}></CoolCard>
+                            ))
+                        }
                     </div>
                     <button><a href="">Browse Portfolio</a></button>
                 </section>

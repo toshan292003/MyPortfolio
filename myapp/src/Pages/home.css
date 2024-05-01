@@ -373,25 +373,6 @@ a{
     font-size: 1.5rem;
 }
 
-.home-5 div section img{
-    height: 400px;
-}
-
-.home-5 div section{
-    height: 300px;
-    width: 400px;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: all 0.5s ease;
-}
-
-.home-5 div section:hover{
-    transform: scale(103%);
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-}
-
-.home-5 p,
-.home-5 h1{
-    color: black;
-    z-index: 10;
+.home-5 button{
+    margin-top: 50px;
 }
