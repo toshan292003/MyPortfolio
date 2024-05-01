@@ -59,7 +59,7 @@ export default function Home() {
 
 
     const projects=[
-        {name:"Project 1", Image:"https://i.pinimg.com/564x/6e/ca/15/6eca15a37c66d0e2cdc52ae0ef4eecc2.jpg"},
+        {name:"Project 1", Image:"https://i.pinimg.com/564x/6e/ca/15/6eca15a37c66d0e2cdc52ae0ef4eecc2.jpg", Link:"https://in.pinterest.com/pin/59461657571926852/"},
         {name:"Project 2", Image:"https://i.pinimg.com/564x/25/56/21/2556210e95b6e5d8debf48ce58678b07.jpg"},
         {name:"Project 3", Image:"https://i.pinimg.com/564x/ad/c1/8f/adc18f7eb9df78a4ffa2f2441ae69b2d.jpg"},
         {name:"Project 4", Image:"https://i.pinimg.com/236x/e3/75/48/e37548de31d5fe127f3028039efcd46d.jpg"},
@@ -202,7 +202,7 @@ export default function Home() {
                     <div>
                         {
                             projects.map((i)=>(
-                                <CoolCard Image={i.Image} name={i.name}></CoolCard>
+                                <CoolCard Image={i.Image} name={i.name} Link={i.Link}></CoolCard>
                             ))
                         }
                     </div>
