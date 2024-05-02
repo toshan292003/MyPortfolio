@@ -11,6 +11,7 @@ import CoolHeading from "../components/CoolHeading";
 import homebackimage from '../Images/1x/HomeBackgroundArtboard\ 1.png';
 import Progress from "../components/Progress";
 import CoolCard from "../components/CoolCard";
+import HomeModel from "../components/HomeModel";
 
 import DSA from "../Images/Icons/data.png";
 import Graphic from "../Images/Icons/editorial.png";
@@ -57,9 +58,11 @@ export default function Home() {
     })
 
 
+    const [showModel,setshowModel] = useState(false);
 
     const projects=[
-        {name:"Project 1", Image:"https://i.pinimg.com/564x/6e/ca/15/6eca15a37c66d0e2cdc52ae0ef4eecc2.jpg", Link:"https://in.pinterest.com/pin/59461657571926852/"},
+        {name:"Project 1", Image:"https://i.pinimg.com/564x/6e/ca/15/6eca15a37c66d0e2cdc52ae0ef4eecc2.jpg",
+        Link:"https://in.pinterest.com/pin/59461657571926852/"},
         {name:"Project 2", Image:"https://i.pinimg.com/564x/25/56/21/2556210e95b6e5d8debf48ce58678b07.jpg"},
         {name:"Project 3", Image:"https://i.pinimg.com/564x/ad/c1/8f/adc18f7eb9df78a4ffa2f2441ae69b2d.jpg"},
         {name:"Project 4", Image:"https://i.pinimg.com/236x/e3/75/48/e37548de31d5fe127f3028039efcd46d.jpg"},
@@ -208,6 +211,11 @@ export default function Home() {
                     </div>
                     <button><a href="">Browse Portfolio</a></button>
                 </section>
+
+                <div className="home-5">
+                    <button onClick={()=>setshowModel(true)}>CLick me</button>
+                    {showModel && <HomeModel Display="https://i.pinimg.com/564x/5f/6d/02/5f6d02661746a2d6e2735d3a1bf13aef.jpg" onClose={()=>setshowModel(false)}></HomeModel>}
+                </div>
             </div>
         </>
     )
