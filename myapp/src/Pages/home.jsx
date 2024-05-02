@@ -52,7 +52,7 @@ export default function Home() {
     const [typeEffect] = useTypewriter({
         words : ['Full Stack Developer','UI/UX Designer','Graphic Designer','Student'],
         loop:{},
-        typeSpeed : 100,
+        typeSpeed : 50,
         deleteSpeed: 50
     })
 
@@ -72,7 +72,7 @@ export default function Home() {
             <div className="home">
                 <section className="home-part1">
                     <div className="homebackimage">
-                        <img src={homebackimage} style={{transform:`translateY(${OffsetY*-0.25}px)`}} alt="" />
+                        <img src={homebackimage} alt="" />
                     </div>
                     <div className="circle">
                     </div>
@@ -81,7 +81,7 @@ export default function Home() {
                         <span>{typeEffect}<Cursor cursorStyle='|'/></span>
                         <button onClick={() => downloadFile(RESUME_PDF_FILE)}>Download Resume</button>
                     </div>
-                    <img src={HomePage} alt="" />
+                    <img src={HomePage} id="masterimg" alt="" />
                 </section>
 
 

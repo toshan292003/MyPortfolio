@@ -115,10 +115,13 @@ a{
 
 .home-part1 img{
     position: absolute;
-    top: -50px;
+    bottom: -400px;
     right: 5vw;
-    height: 1200px;
     z-index: 10;
+}
+
+#masterimg{
+    height: 140vh;
 }
 
 .home-part2{
@@ -359,7 +362,8 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    margin: auto;
+    max-width: 85vw;
 }
 
 .home-5 div{
