@@ -116,12 +116,12 @@ a{
 .home-part1 img{
     position: absolute;
     bottom: -400px;
-    right: 5vw;
+    right: 1vw;
     z-index: 10;
 }
 
 #masterimg{
-    height: 140vh;
+    height: 1400px;
 }
 
 .home-part2{
