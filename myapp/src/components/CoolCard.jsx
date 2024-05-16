@@ -20,7 +20,7 @@ export default function CoolCard(props) {
 
     return (
         <>
-            <section className="coolcard" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} data-aos="fade-up">
+            <section className="coolcard" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 <a href={props.Link}>
                     <h1 
                     style={{

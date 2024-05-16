@@ -19,9 +19,6 @@ import Dev from "../Images/Icons/coding.png";
 import Motion from "../Images/Icons/lightning.png";
 import Design from "../Images/Icons/webpage.png";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 export default function Home() {
     const [OffsetY,setOffsetY] = useState(0);
 
@@ -34,9 +31,6 @@ export default function Home() {
         return ()=> window.removeEventListener("scroll",handleScroll);
     }, []);
 
-    useEffect(()=>{
-        AOS.init({duration: 1000});
-    });
 
     //function for download option in home page seciton 1
     const RESUME_PDF_FILE = "http://localhost:3000/Resume.pdf";
@@ -79,7 +73,7 @@ export default function Home() {
                     </div>
                     <div className="circle">
                     </div>
-                    <div data-aos="fade-up">
+                    <div>
                         <h2>Hello I'm <b>TOSHAN S MAINDAN</b></h2>
                         <span>{typeEffect}<Cursor cursorStyle='|'/></span>
                         <button onClick={() => downloadFile(RESUME_PDF_FILE)}>Download Resume</button>
@@ -97,33 +91,33 @@ export default function Home() {
                         <section>
                             <img src={About} alt="" />
                             <img src={AboutBg} alt="" />
-                            <h1 data-aos = "fade-up">Something About Me</h1>
-                            <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa ab reiciendis sit reprehenderit ea soluta illo quae obcaecati quaerat, expedita enim nisi temporibus cum officiis quam error sed eligendi necessitatibus voluptatum ipsam corporis. Aperiam dicta vitae eum. Dolorum nisi inventore ut tempora beatae totam aspernatur, error fugit quisquam soluta quod!</p>
-                            <div data-aos="fade-up">
-                                <ul data-aos="fade-up">
-                                    <li data-aos="fade-up">
+                            <h1>Something About Me</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa ab reiciendis sit reprehenderit ea soluta illo quae obcaecati quaerat, expedita enim nisi temporibus cum officiis quam error sed eligendi necessitatibus voluptatum ipsam corporis. Aperiam dicta vitae eum. Dolorum nisi inventore ut tempora beatae totam aspernatur, error fugit quisquam soluta quod!</p>
+                            <div>
+                                <ul>
+                                    <li>
                                         <h3>Name</h3>
                                         <span>Toshan S Maindan</span>
                                     </li>
-                                    <li data-aos="fade-up">
+                                    <li>
                                         <h3>Email</h3>
                                         <span>toshanyt@gmail.com</span>
                                     </li>
-                                    <li data-aos="fade-up">
+                                    <li>
                                         <h3>Phone</h3>
                                         <span>+91 8549039062</span>
                                     </li>
                                 </ul>
-                                <ul data-aos="fade-up">
-                                    <li data-aos="fade-up">
+                                <ul>
+                                    <li>
                                         <h3>Adress</h3>
                                         <span>Mangalore</span>
                                     </li>
-                                    <li data-aos="fade-up">
+                                    <li>
                                         <h3>DOB</h3>
                                         <span>02 Sept 2003</span>
                                     </li>
-                                    <li data-aos="fade-up">
+                                    <li>
                                         <h3>Occupation</h3>
                                         <span>Student</span>
                                     </li>
@@ -139,31 +133,31 @@ export default function Home() {
                     <CoolHeading title="My education" subtitle="Learning journey"></CoolHeading>
                     <section>
                         <div className="line" data-aos="zoom"></div>
-                        <div className="education" data-aos="fade-up">
+                        <div className="education">
                             <h3></h3>
                             <span>2019</span>
                             <div>
-                                <h1 data-aos="fade-up">High School Graduate</h1>
-                                <h2 data-aos="fade-up">Sharada Vidyalaya Mangalore</h2>
-                                <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta laboriosam ea adipisci minus officia vitae quis quae maiores unde.</p>
+                                <h1>High School Graduate</h1>
+                                <h2>Sharada Vidyalaya Mangalore</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta laboriosam ea adipisci minus officia vitae quis quae maiores unde.</p>
                             </div>
                         </div>
-                        <div className="education" data-aos="fade-up">
+                        <div className="education">
                             <div>
-                                <h1 data-aos="fade-up">Pre University Graduate</h1>
-                                <h2 data-aos="fade-up">Sharada PU College Mangalore</h2>
-                                <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta laboriosam ea adipisci minus officia vitae quis quae maiores unde.</p>
+                                <h1>Pre University Graduate</h1>
+                                <h2>Sharada PU College Mangalore</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta laboriosam ea adipisci minus officia vitae quis quae maiores unde.</p>
                             </div>
                             <span>2021</span>
                             <h3></h3>
                         </div>
-                        <div className="education" data-aos="fade-up">
+                        <div className="education">
                             <h3></h3>
                             <span>2025</span>
                             <div>
-                                <h1 data-aos="fade-up">Bachelor Of Engineering</h1>
-                                <h2 data-aos="fade-up">Sahyadri Management</h2>
-                                <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta laboriosam ea adipisci minus officia vitae quis quae maiores unde.</p>
+                                <h1>Bachelor Of Engineering</h1>
+                                <h2>Sahyadri Management</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta laboriosam ea adipisci minus officia vitae quis quae maiores unde.</p>
                             </div>
                         </div>
                     </section>
@@ -172,27 +166,27 @@ export default function Home() {
                 <section className="home-part4">
                     <CoolHeading title="what i bring to the table" subtitle="my skillset"></CoolHeading>
                     <section>
-                        <div className="card" data-aos="fade-up">
+                        <div className="card">
                             <img src={DSA} alt="" />
                             <h1>DSA Expertise</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, commodi.</p>
                         </div>
-                        <div className="card" data-aos="fade-up">
+                        <div className="card">
                             <img src={Design} alt=""/>
                             <h1>Web Design</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, commodi.</p>
                         </div>
-                        <div className="card" data-aos="fade-up">
+                        <div className="card">
                             <img src={Dev} alt="" />
                             <h1>Web Development</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, commodi.</p>
                         </div>
-                        <div className="card" data-aos="fade-up">
+                        <div className="card">
                             <img src={Graphic} alt="" />
                             <h1>Graphic Design</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, commodi.</p>
                         </div>
-                        <div className="card" data-aos="fade-up">
+                        <div className="card">
                             <img src={Motion} alt="" />
                             <h1>Motion Graphics</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, commodi.</p>

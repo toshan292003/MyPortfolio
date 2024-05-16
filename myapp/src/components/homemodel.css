@@ -1,25 +1,22 @@
-.homemodel{
-    width: 70vw;
+.modelbox{
     position: fixed;
+    justify-content: space-between;
+    top: 40px;
     background-color: #151515;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    overflow: hidden;
-    top: 10px;
     z-index: 100;
+    border-radius: 10px;
+    width: 80vw;
+    overflow: hidden;
+    height: 90vh;
 }
 
-.homemodel button{
+.modelbox button{
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 10px;
-    right: 50px;
+    top: -10px;
+    right: 30px;
     height: 50px;
     width: 50px;
     background-color: rgba(255, 255, 255, 0.5);
@@ -30,32 +27,47 @@
     transform: rotate(45deg);
 }
 
-.homemodel button:hover{
+.modelbox button:hover{
     background-color: rgba(255, 255, 255, 1);
     cursor: pointer;
     border: none;
     font-size: 1.6rem;
 }
 
-.imagebox{
+.model{
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center;
+    justify-content:space-between !important;
+    gap: 0px !important;
     width: 100%;
-    height: 400px;
+    height: 100%;
+}
+
+.model-item{
+    height: 100%;
+    width: 100%;
+}
+
+#model-img{
+    width: 60vw;
     overflow: hidden;
 }
 
-.homemodel img:nth-child(1){
-    width: 100%;
+#model-img img{
+    height: 100%;
 }
 
-.homemodel p,
-.homemodel ol li,
-.homemodel a{
-    font-size: 1rem;
+.model-item p,
+.model-item ol li,
+.model-item a{
+    font-size: 0.9rem;
     max-width: 80%;
     text-align: justify;
 }
 
-.homemodel section{
+.model-item section{
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -64,7 +76,7 @@
     gap: 30px;
 }
 
-.homemodel section div{
+.model-item section div{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -73,7 +85,7 @@
     justify-content: flex-start;
 }
 
-.homemodel section span{
+.model-item section span{
     font-size: 1.5rem;
     font-weight: 600;
 }

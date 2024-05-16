@@ -5,11 +5,13 @@ import Progress from "./Progress";
 export default function HomeModel(props){
     return(
         <>
-            <div className="homemodel">
-                <button onClick={props.onClose}>&#10010;</button>
-                <div className="imagebox">
+        <div className="modelbox">
+            <button onClick={props.onClose}>&#10010;</button>
+            <div className="model">
+                <div className="model-item" id="model-img">
                     <img src={props.Display} alt="" />
                 </div>
+                <div className="model-item">
                 <h1>PROJECT NAME</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, dolore deserunt assumenda cumque eum nemo illum similique exercitationem nostrum! Vero deleniti placeat sequi, sapiente sit quidem eveniet qui sed eos!</p>
                 <section>
@@ -36,7 +38,9 @@ export default function HomeModel(props){
                         <Progress percentage="25" title="jh"></Progress>
                     </div>
                 </section>
+                </div>
             </div>
+        </div>
         </>
     )
 }
