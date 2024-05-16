@@ -21,16 +21,14 @@ export default function CoolCard(props) {
     return (
         <>
             <section className="coolcard" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                <a href={props.Link}>
-                    <h1 
-                    style={{
-                        opacity:Opacity,
-                        transform:Move
-                    }}
-                    >{props.name}</h1>
-                    <div style={{opacity:Opacity}}></div>
-                    <img src={props.Image} alt="" />
-                </a>
+                <h1 
+                style={{
+                    opacity:Opacity,
+                    transform:Move
+                }}
+                >{props.name}</h1>
+                <div style={{opacity:Opacity}}></div>
+                <img src={props.Image} alt="" />
             </section>
         </>
     )

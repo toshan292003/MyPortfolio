@@ -62,9 +62,15 @@
 .model-item p,
 .model-item ol li,
 .model-item a{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    opacity: 75%;
+    font-weight: 400;
     max-width: 80%;
     text-align: justify;
+}
+
+.model-item ol li{
+    max-width: 100% !important;
 }
 
 .model-item section{
@@ -79,13 +85,21 @@
 .model-item section div{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     width: 100%;
     align-items: start;
     justify-content: flex-start;
 }
 
 .model-item section span{
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     font-weight: 600;
+}
+
+.modelbox h3{
+    font-size: 1.4rem;
+}
+
+.modelbox h1{
+    padding-top: 50px;
 }
