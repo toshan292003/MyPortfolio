@@ -1,8 +1,20 @@
-import React from "react";
+import {React , useEffect , useState } from "react";
 import "./homemodel.css";
 import Progress from "./Progress";
 
 export default function HomeModel(props){
+    const {project} = props;
+    
+    const [awards,setawards] = useState(false);
+    useEffect(() => {
+        
+        let n = project.awards.length;
+        console.log(n);
+        if(n>0){
+            setawards(true);
+        }
+      }, []);
+
     return(
         <>
         <div className="modelbox">
@@ -12,14 +24,20 @@ export default function HomeModel(props){
                     <img src={props.Display} alt="" />
                 </div>
                 <div className="model-item">
-                <h1>PROJECT NAME</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, dolore deserunt assumenda cumque eum nemo illum similique exercitationem nostrum! Vero deleniti placeat sequi, sapiente sit quidem eveniet qui sed eos!</p>
+                <h1>{props.name}</h1>
+                <p>{project.desc}</p>
                 <section>
-                    <span>Duration : 10 Mar - 12 Mar 2023</span>
-                    <div>
-                        <h3>Awards and Recognition : </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, tenetur.</p>
-                    </div>
+                    <span>Duration {project.duration}</span>
+                    {awards && 
+                        <div>
+                            <h3>Awards and Recognition : </h3>
+                            {
+                                project.awards.map((AwardName)=>(
+                                    <p>{AwardName}</p>
+                                ))
+                            }
+                        </div>
+                    }
                     <div>
                         <h3>Project Links : </h3>
                         <a href="">Github</a>
@@ -32,10 +50,6 @@ export default function HomeModel(props){
                             <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
                             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, aliquid.</li>
                         </ol>
-                    </div>
-                    <div>
-                        <h3>Technologies Used : </h3>
-                        <Progress percentage="25" title="jh"></Progress>
                     </div>
                 </section>
                 </div>
