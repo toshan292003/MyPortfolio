@@ -4,12 +4,10 @@ import Progress from "./Progress";
 
 export default function HomeModel(props){
     const {project} = props;
-    
     const [awards,setawards] = useState(false);
     useEffect(() => {
         
         let n = project.awards.length;
-        console.log(n);
         if(n>0){
             setawards(true);
         }
@@ -40,7 +38,9 @@ export default function HomeModel(props){
                     }
                     <div>
                         <h3>Project Links : </h3>
-                        <a href="">Github</a>
+                        {project.Links.map((name,link)=>(
+                            <a href={link}>{name}</a>
+                        ))}
                         <a href="">Website</a>
                     </div>
                     <div>

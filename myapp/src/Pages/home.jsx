@@ -56,7 +56,11 @@ export default function Home() {
         Project : {
             desc:"This is a project sample description",
             duration : "Sample Duration",
-            awards : ["This is a sample awards section."]}
+            awards : ["This is a sample awards section."],
+            Links : {   Github : "https://github.com/toshan292003",
+                        Leetcode : "https://leetcode.com/problemset/"
+                    }            
+        }
         },
         {name:"Project 2", Image:"https://i.pinimg.com/564x/25/56/21/2556210e95b6e5d8debf48ce58678b07.jpg",
         Project : {
