@@ -1,9 +1,6 @@
 import { React, useState } from "react";
 import "./progress.css";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 export default function Progress(props) {
   const something = 314 - props.percentage * 3.14;
   function something2() {
@@ -22,7 +19,7 @@ export default function Progress(props) {
   }
   return (
     <>
-      <div class="outer" data-aos="fade-up">
+      <div class="outer">
         <div className="inner">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +46,7 @@ export default function Progress(props) {
           </svg>
           <span>{props.percentage}%</span>
         </div>
-        <div className="pronames" data-aos="fade-up">{props.title}</div>
+        <div className="pronames">{props.title}</div>
       </div>
     </>
   );

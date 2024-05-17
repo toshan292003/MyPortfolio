@@ -57,12 +57,8 @@ export default function Home() {
             desc:"This is a project sample description",
             duration : "Sample Duration", 
             awards : ["This is a sample awards section."],
-            Links : [   "https://github.com/toshan292003",
-                        "https://leetcode.com/problemset/"
-                    ],
-            Learnings : [   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?",
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"
-                        ]
+            Links : [   "https://github.com/toshan292003","https://leetcode.com/problemset/"],
+            Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
         }
         },
         {name:"Project 2", Image:"https://i.pinimg.com/564x/25/56/21/2556210e95b6e5d8debf48ce58678b07.jpg",
@@ -70,12 +66,8 @@ export default function Home() {
             desc:"This is a project sample description 2",
             duration : "Sample Duration 2",
             awards : ["Award 1"],
-            Links : [   "https://github.com/toshan292003",
-                        "https://leetcode.com/problemset/"
-                    ],
-            Learnings : [   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?",
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"
-                        ]
+            Links : ["https://github.com/toshan292003","https://leetcode.com/problemset/"],
+            Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
             }
         },
         {name:"Project 3", Image:"https://i.pinimg.com/564x/ad/c1/8f/adc18f7eb9df78a4ffa2f2441ae69b2d.jpg",
@@ -83,9 +75,7 @@ export default function Home() {
             desc:"This is a project sample description 3",
             duration : "Sample Duration 3",
             awards : ["Award 2"],
-            Learnings : [   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?",
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"
-                        ]
+            Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
         }    
         },
         {name:"Project 4", Image:"https://i.pinimg.com/236x/e3/75/48/e37548de31d5fe127f3028039efcd46d.jpg",
@@ -93,27 +83,21 @@ export default function Home() {
             desc:"This is a project sample description 4",
             duration : "Sample Duration 4",
             awards : ["Award 3", " Award 3"],
-            Learnings : [   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?",
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"
-                        ]
+            Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
         }
         },
         {name:"Project 5", Image:"https://i.pinimg.com/564x/1d/f1/98/1df1981458a824231ccca9289daff828.jpg",
         Project : {
             desc:"This is a project sample description 5",
             duration : "Sample Duration 5",
-            Learnings : [   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?",
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"
-                        ]
+            Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
             }
         },
         {name:"Project 6", Image:"https://i.pinimg.com/564x/d7/a7/4e/d7a74e857301f436f7d9bbb183952a68.jpg",
         Project : {
             desc:"This is a project sample description 6",
             duration : "Sample Duration 6",
-            Learnings : [   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?",
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"
-                        ]
+            Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
             }
         }
     ]
@@ -193,14 +177,14 @@ export default function Home() {
                             <div>
                                 <h1>High School Graduate</h1>
                                 <h2>Sharada Vidyalaya Mangalore</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta laboriosam ea adipisci minus officia vitae quis quae maiores unde.</p>
+                                <p>Cherished an enriching learning experience at "Sharada Vidyalaya", nurturing academic excellence and personal growth.</p>
                             </div>
                         </div>
                         <div className="education">
                             <div>
                                 <h1>Pre University Graduate</h1>
                                 <h2>Sharada PU College Mangalore</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta laboriosam ea adipisci minus officia vitae quis quae maiores unde.</p>
+                                <p>Pursued pre-university education at "Sharada PU College", nurturing a passion for computer science and honing problem-solving skills through engaging curriculum.</p>
                             </div>
                             <span>2021</span>
                             <h3></h3>
@@ -211,7 +195,7 @@ export default function Home() {
                             <div>
                                 <h1>Bachelor Of Engineering</h1>
                                 <h2>Sahyadri Management</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex soluta laboriosam ea adipisci minus officia vitae quis quae maiores unde.</p>
+                                <p>Earned engineering degree from "Sahyadri College of Engineering and Management", mastering advanced programming concepts and developing expertise in software development.</p>
                             </div>
                         </div>
                     </section>
@@ -223,27 +207,27 @@ export default function Home() {
                         <div className="card">
                             <img src={DSA} alt="" />
                             <h1>DSA Expertise</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, commodi.</p>
+                            <p>Mastering algorithms and data structures for efficient problem-solving.</p>
                         </div>
                         <div className="card">
                             <img src={Design} alt=""/>
                             <h1>Web Design</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, commodi.</p>
+                            <p>Crafting visually appealing and user-friendly website designs.</p>
                         </div>
                         <div className="card">
                             <img src={Dev} alt="" />
                             <h1>Web Development</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, commodi.</p>
+                            <p>Building dynamic and responsive web applications.</p>
                         </div>
                         <div className="card">
                             <img src={Graphic} alt="" />
                             <h1>Graphic Design</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, commodi.</p>
+                            <p>Creating compelling visual designs for branding and marketing.</p>
                         </div>
                         <div className="card">
                             <img src={Motion} alt="" />
                             <h1>Motion Graphics</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, commodi.</p>
+                            <p>Animating captivating motion graphics for engaging storytelling.</p>
                         </div>
                     </section>
                 </section>
@@ -259,10 +243,9 @@ export default function Home() {
                     </div>
                     <button><a href="">Browse Portfolio</a></button>
                 </section>
+                
+                <Progress percentage="90" title="C++"></Progress>
 
-                <div className="home-5">
-
-                </div>
             </div>
         </>
     )
