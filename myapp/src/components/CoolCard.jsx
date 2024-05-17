@@ -8,14 +8,12 @@ export default function CoolCard(props) {
 
     const handleMouseEnter = () => {
         setOpacity("100%");
-        console.log(Opacity);
         setMove("translateY(0px)")
     };
     
     const handleMouseLeave = () => {
         setOpacity("0%");
         setMove("translateY(50px)")
-        console.log(Opacity);
     };
 
     return (

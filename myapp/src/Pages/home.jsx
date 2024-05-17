@@ -19,6 +19,8 @@ import Dev from "../Images/Icons/coding.png";
 import Motion from "../Images/Icons/lightning.png";
 import Design from "../Images/Icons/webpage.png";
 
+import Scroll from "../components/SmoothScroll";
+
 export default function Home() {
     const [OffsetY,setOffsetY] = useState(0);
 
@@ -244,8 +246,9 @@ export default function Home() {
                     <button><a href="">Browse Portfolio</a></button>
                 </section>
                 
-                <Progress percentage="90" title="C++"></Progress>
+                <section className="home-6">
 
+                </section>
             </div>
         </>
     )
