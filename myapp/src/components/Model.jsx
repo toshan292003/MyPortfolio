@@ -9,7 +9,7 @@ export default function Model(props){
 
     return(
         <>
-            <div onClick={()=>setshowModel(true)}>
+            <div onClick={()=>setshowModel(true)} id="Modelmain">
                 <CoolCard Image={props.Image} name={props.name}></CoolCard>
             </div>
             {showModel && <HomeModel Display={props.Image} name={props.name} project={project} onClose={()=>setshowModel(false)}></HomeModel>}
