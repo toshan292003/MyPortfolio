@@ -5,11 +5,14 @@ import Progress from "./Progress";
 export default function HomeModel(props){
     const {project} = props;
     const [awards,setawards] = useState(false);
+    const [links,setlinks] = useState(false);
     useEffect(() => {
-        
-        let n = project.awards.length;
-        if(n>0){
+        console.log(project.Links);
+        if(project.awards != undefined){
             setawards(true);
+        }
+        if(project.Links != undefined){
+            setlinks(true);
         }
       }, []);
 
@@ -36,20 +39,19 @@ export default function HomeModel(props){
                             }
                         </div>
                     }
-                    <div>
-                        <h3>Project Links : </h3>
-                        {project.Links.map((name,link)=>(
-                            <a href={link}>{name}</a>
-                        ))}
-                        <a href="">Website</a>
-                    </div>
+                    {links && 
+                        <div>
+                            <h3>Check out the Project here : </h3>
+                            {project.Links.map((link)=>(
+                                <a href={link}>{link}</a>
+                            ))}
+                        </div>
+                    }
                     <div>
                         <h3>Key Learnings : </h3>
-                        <ol>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, aliquid.</li>
-                        </ol>
+                        {project.Learnings.map((point)=>(
+                            <p>{point}</p>
+                        ))}
                     </div>
                 </section>
                 </div>
