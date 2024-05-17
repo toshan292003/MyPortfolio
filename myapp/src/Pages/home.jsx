@@ -249,6 +249,7 @@ export default function Home() {
                 <section className="home-6">
 
                 </section>
+
             </div>
         </>
     )

@@ -9,7 +9,6 @@ const Scroll = ()=>{
     useEffect(()=>{
         Scrollbar.init(document.body,options);
     },[])
-
     return null;
 }
 
