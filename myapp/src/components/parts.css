@@ -17,19 +17,18 @@
     overflow: hidden;
 }
 
-.part section::before{
-    content: "";
+.part div{
     position: absolute;
     background-color: black;
-    height: 100vh;
+    height: 200vh;
     width: 100%;
     z-index: 10;
-    opacity: 40%;
+    transition: all 1s ease;
 }
 
 .part section img{
     position: absolute;
-    width: 110%;
+    width: 120%;
     filter: none;
     transition: all 0.5s ease;
 }
@@ -38,4 +37,6 @@
     transition: all 0.5s ease;
     font-size: 2rem;
     z-index: 20;
+    border-radius: 100px;
+    padding: 5px 20px;
 }

@@ -28,7 +28,7 @@ export default function HomeModel(props){
                 <h1>{props.name}</h1>
                 <p>{project.desc}</p>
                 <section>
-                    <span>Duration {project.duration}</span>
+                    <span>Duration : &nbsp;&nbsp;{project.duration}</span>
                     {awards && 
                         <div>
                             <h3>Awards and Recognition : </h3>
@@ -43,7 +43,7 @@ export default function HomeModel(props){
                         <div>
                             <h3>Check out the Project: </h3>
                             {project.Links.map((link)=>(
-                                <a href={link}>{link}</a>
+                                <a href={link} target="blank">{link}</a>
                             ))}
                         </div>
                     }

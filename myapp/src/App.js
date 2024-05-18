@@ -6,6 +6,9 @@ import About from './Pages/About';
 import Services from './Pages/Services';
 import Portfolio from './Pages/Portfolio';
 import Experience from './Pages/Experience';
+import Web from './Pages/Web';
+import Designing from './Pages/Designing';
+import Cinematography from './Pages/Cinematography';
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
           <Route path='/services' element={<Services/>}></Route>
           <Route path='/portfolio' element={<Portfolio/>}></Route>
           <Route path='/experience' element={<Experience/>}></Route>
+          <Route path='/portfolio/web' element={<Web/>}></Route>
+          <Route path='/portfolio/designing' element={<Designing/>}></Route>
+          <Route path='/portfolio/cinema' element={<Cinematography/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
