@@ -193,9 +193,12 @@ export default function Home() {
                     </section>
                 </section>
 
-                
-                <section className="home-6">
-
+                <section className="home-part6">
+                    <img src="https://images.pexels.com/photos/15860615/pexels-photo-15860615/free-photo-of-narrow-alley-in-town.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                    <div>
+                        <h1>2500</h1>
+                        <span>Hours of Work</span>
+                    </div>
                 </section>
 
             </div>
