@@ -281,7 +281,7 @@ export default function Home() {
                         ))
                     }
                 </div>
-                <button><a href="">Browse Portfolio</a></button>
+                <button><a href="./portfolio">Browse Portfolio</a></button>
             </div>
 
             <Footer></Footer>

@@ -3,6 +3,8 @@ import Footer from "./footer";
 import CoolHeading from "../components/CoolHeading";
 import Model from "../components/Model";
 
+import SmartHome from "../Images/Projects/SmartHome.png";
+
 export default function Web(){
 
     const projects=[
@@ -14,13 +16,13 @@ export default function Web(){
             Learnings : ["Effective team and client communication strategies.","Understanding the basic workflow of website development projects."]
         }
         },
-        {name:"Project 2", Image:"https://i.pinimg.com/564x/25/56/21/2556210e95b6e5d8debf48ce58678b07.jpg",
+        {name:"Smart House", Image:SmartHome,
         Project : {
-            desc:"This is a project sample description 2",
-            duration : "Sample Duration 2",
-            awards : ["Award 1"],
-            Links : ["https://github.com/toshan292003","https://leetcode.com/problemset/"],
-            Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
+            desc:"This award-winning UI/UX design revolutionizes home automation through an intuitive smartphone app. Users can effortlessly monitor and control all home appliances, turning them on/off remotely. The real-time status updates allow seamless tracking of each device's condition. This innovative solution streamlines home management, making it convenient and user-friendly.",
+            duration : "29 Apr - 29 Apr 2023",
+            awards : ["Secured First Place in UI/UX Competition conducted by YentechMania 2024 at Yenepoya IT, Moodibidri"],
+            Links : ["https://www.figma.com/design/7g2D7hnOL459uUy86Y0yW5/Untitled?t=tlhoQg5rRcl07l2G-0"],
+            Learnings : ["The competition honed my problem-solving skills, enabling me to approach challenges with a fresh perspective."]
             }
         },
         {name:"Project 3", Image:"https://i.pinimg.com/564x/ad/c1/8f/adc18f7eb9df78a4ffa2f2441ae69b2d.jpg",
@@ -30,28 +32,6 @@ export default function Web(){
             awards : ["Award 2"],
             Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
         }    
-        },
-        {name:"Project 4", Image:"https://i.pinimg.com/236x/e3/75/48/e37548de31d5fe127f3028039efcd46d.jpg",
-        Project : {
-            desc:"This is a project sample description 4",
-            duration : "Sample Duration 4",
-            awards : ["Award 3", " Award 3"],
-            Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
-        }
-        },
-        {name:"Project 5", Image:"https://i.pinimg.com/564x/1d/f1/98/1df1981458a824231ccca9289daff828.jpg",
-        Project : {
-            desc:"This is a project sample description 5",
-            duration : "Sample Duration 5",
-            Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
-            }
-        },
-        {name:"Project 6", Image:"https://i.pinimg.com/564x/d7/a7/4e/d7a74e857301f436f7d9bbb183952a68.jpg",
-        Project : {
-            desc:"This is a project sample description 6",
-            duration : "Sample Duration 6",
-            Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
-            }
         }
     ]
 

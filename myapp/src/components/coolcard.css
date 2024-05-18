@@ -1,10 +1,15 @@
 .coolcard{
+    position: relative;
     height: 300px;
     width: 400px;
     border-radius: 10px;
     overflow: hidden;
-    position: relative;
     transition: all 0.5s ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .coolcard div{
@@ -14,6 +19,7 @@
     background-color: rgba(0, 157, 255, 0.75);
     transition: all 1s ease;
     position: absolute;
+    z-index: 10;
 }
 
 .coolcard div:hover{
@@ -21,18 +27,19 @@
 }
 
 .coolcard img{
+    position: absolute;
     width: 100%;
+    z-index: 5;
 }
 
 .coolcard h1{
-    position: absolute;
+    position: relative;
     text-align: center;
     top: 10px;
     z-index: 10;
     font-size: 2.5rem;
     transition: all 0.5s ease;
-    top: 120px;
-    left: 110px;
+    z-index: 20;
 }
 
 .coolcard h1:hover{
