@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import Scrollbar from 'smooth-scrollbar';
 
 let options = {
-    damping : 0.07
+    damping : 0.07,
+    renderByPixels: true
 }
 
 const Scroll = ()=>{

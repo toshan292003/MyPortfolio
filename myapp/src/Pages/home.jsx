@@ -1,5 +1,5 @@
 //importing basic react requirements and libraries
-import React, { useState ,useEffect } from "react";
+import React, { useState ,useEffect, useRef } from "react";
 import {useTypewriter,Cursor} from 'react-simple-typewriter';
 
 //importing components and pages
@@ -19,10 +19,15 @@ import Dev from "../Images/Icons/coding.png";
 import Motion from "../Images/Icons/lightning.png";
 import Design from "../Images/Icons/webpage.png";
 
-import Scroll from "../components/SmoothScroll";
+import "./locomotive.css";
+import LocomotiveScroll from 'locomotive-scroll';
+
 
 export default function Home() {
     const [OffsetY,setOffsetY] = useState(0);
+
+
+    const scrollRef = useRef(null);
 
     const handleScroll = ()=>{
         setOffsetY(window.pageYOffset);
@@ -30,7 +35,15 @@ export default function Home() {
 
     useEffect(()=>{
         window.addEventListener("scroll",handleScroll);
-        return ()=> window.removeEventListener("scroll",handleScroll);
+        const scrollInstance = new LocomotiveScroll({
+            el: scrollRef.current,
+            smooth: true,
+            multiplier: 0.75
+          });
+
+        return () => {
+      scrollInstance.destroy();
+    };
     }, []);
 
 
@@ -57,8 +70,7 @@ export default function Home() {
 
     return (
         <>
-            <Scroll></Scroll>
-            <div className="home">
+            <div className="home" data-scroll-container ref={scrollRef}>
                 <section className="home-part1">
                     <div className="homebackimage">
                         <img src={homebackimage} alt="" />
@@ -70,7 +82,7 @@ export default function Home() {
                         <span>{typeEffect}<Cursor cursorStyle='|'/></span>
                         <button onClick={() => downloadFile(RESUME_PDF_FILE)}>Download Resume</button>
                     </div>
-                    <img src={HomePage} id="masterimg" alt="" />
+                    <img src={HomePage} id="masterimg" alt="" data-scroll data-scroll-speed="-1"/>
                 </section>
 
 
@@ -81,7 +93,7 @@ export default function Home() {
                     <CoolHeading title="about me" subtitle="who am i"></CoolHeading>
                     <p>
                         <section>
-                            <img src={About} alt="" />
+                            <img src={About} alt="" data-scroll data-scroll-speed="-1"/>
                             <img src={AboutBg} alt="" />
                             <h1>Something About Me</h1>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa ab reiciendis sit reprehenderit ea soluta illo quae obcaecati quaerat, expedita enim nisi temporibus cum officiis quam error sed eligendi necessitatibus voluptatum ipsam corporis. Aperiam dicta vitae eum. Dolorum nisi inventore ut tempora beatae totam aspernatur, error fugit quisquam soluta quod!</p>
@@ -119,8 +131,8 @@ export default function Home() {
                     </p>
                 </section>
 
-                <section className="quote">
-                    <img src="https://images.pexels.com/photos/15860615/pexels-photo-15860615/free-photo-of-narrow-alley-in-town.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                <section className="quote" data-scroll-container ref={scrollRef}>
+                    <img data-scroll data-scroll-speed="-2" src="https://images.pexels.com/photos/164693/pexels-photo-164693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                     <div>
                         <h1>❜❜</h1>
                         <p>We are just an advanced breed of monkeys on a minor planet of a very average star. But we can understand the Universe. That makes us something very special.</p>
@@ -194,13 +206,21 @@ export default function Home() {
                 </section>
 
                 <section className="home-part6">
-                    <img src="https://images.pexels.com/photos/15860615/pexels-photo-15860615/free-photo-of-narrow-alley-in-town.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                    <img data-scroll data-scroll-speed="-2" src="https://images.pexels.com/photos/164693/pexels-photo-164693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                     <div>
-                        <h1>2500</h1>
+                        <h1>500+</h1>
                         <span>Hours of Work</span>
                     </div>
+                    <div>
+                        <h1>5</h1>
+                        <span>Projects Done</span>
+                    </div>
+                    <div>
+                        <h1>2</h1>
+                        <span>Satisfied Clients</span>
+                    </div>
                 </section>
-
+                
             </div>
         </>
     )

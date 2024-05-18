@@ -22,6 +22,7 @@
 .navbar{
     padding: 40px 0px;
     position: fixed;
+    background-color: transparent;
     width: 100vw;
     z-index: 100;
 }
