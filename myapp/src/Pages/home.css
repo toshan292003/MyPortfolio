@@ -464,6 +464,30 @@ a{
     text-transform: uppercase;
 }
 
+.home-part7{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 85vw;
+    padding-top: 50px;
+}
+
+.home-part7 div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 40px;
+    font-size: 1.5rem;
+}
+
+.home-part7 button{
+    margin-top: 50px;
+}
 
 
 

@@ -6,7 +6,6 @@ import About from './Pages/About';
 import Services from './Pages/Services';
 import Portfolio from './Pages/Portfolio';
 import Experience from './Pages/Experience';
-import Scroll from './components/SmoothScroll';
 
 function App() {
   return (

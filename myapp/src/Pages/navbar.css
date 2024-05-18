@@ -24,7 +24,7 @@
     position: fixed;
     background-color: transparent;
     width: 100vw;
-    z-index: 100;
+    z-index: 90;
 }
 
 .navbar section ul li a{
