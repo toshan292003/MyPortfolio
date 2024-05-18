@@ -502,4 +502,9 @@ a{
 
 .c-scrollbar_thumb {
     background-color: var(--primaryColor) !important;
-  }
+}
+
+.rise-up {
+    transform: translateY(-50px);
+    transition: transform 0.5s ease-out;
+}

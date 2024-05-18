@@ -27,7 +27,6 @@ import LocomotiveScroll from 'locomotive-scroll';
 export default function Home() {
     const [OffsetY,setOffsetY] = useState(0);
 
-
     const scrollRef = useRef(null);
 
     const handleScroll = ()=>{
@@ -40,12 +39,14 @@ export default function Home() {
             el: scrollRef.current,
             smooth: true,
             multiplier: 0.6
-          });
-
+        });
         return () => {
-      scrollInstance.destroy();
-    };
+            scrollInstance.destroy();
+        };
+          
     }, []);
+
+    
 
 
     //function for download option in home page seciton 1
