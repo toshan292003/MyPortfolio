@@ -47,65 +47,17 @@ export default function Home() {
     };
     //typewriter effect in home page section 1
     const [typeEffect] = useTypewriter({
-        words : ['Full Stack Developer','UI/UX Designer','Graphic Designer','Student'],
+        words : ['Full Stack Developer','Programmer','Music Enthusiast','VFX Enthusiast','UI/UX Designer','Graphic Designer','Student'],
         loop:{},
         typeSpeed : 50,
         deleteSpeed: 50
     })
 
-    const projects=[
-        {name:"Project 1", Image:"https://i.pinimg.com/564x/6e/ca/15/6eca15a37c66d0e2cdc52ae0ef4eecc2.jpg",
-        Project : {
-            desc:"This is a project sample description",
-            duration : "Sample Duration", 
-            awards : ["This is a sample awards section."],
-            Links : [   "https://github.com/toshan292003","https://leetcode.com/problemset/"],
-            Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
-        }
-        },
-        {name:"Project 2", Image:"https://i.pinimg.com/564x/25/56/21/2556210e95b6e5d8debf48ce58678b07.jpg",
-        Project : {
-            desc:"This is a project sample description 2",
-            duration : "Sample Duration 2",
-            awards : ["Award 1"],
-            Links : ["https://github.com/toshan292003","https://leetcode.com/problemset/"],
-            Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
-            }
-        },
-        {name:"Project 3", Image:"https://i.pinimg.com/564x/ad/c1/8f/adc18f7eb9df78a4ffa2f2441ae69b2d.jpg",
-        Project : {
-            desc:"This is a project sample description 3",
-            duration : "Sample Duration 3",
-            awards : ["Award 2"],
-            Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
-        }    
-        },
-        {name:"Project 4", Image:"https://i.pinimg.com/236x/e3/75/48/e37548de31d5fe127f3028039efcd46d.jpg",
-        Project : {
-            desc:"This is a project sample description 4",
-            duration : "Sample Duration 4",
-            awards : ["Award 3", " Award 3"],
-            Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
-        }
-        },
-        {name:"Project 5", Image:"https://i.pinimg.com/564x/1d/f1/98/1df1981458a824231ccca9289daff828.jpg",
-        Project : {
-            desc:"This is a project sample description 5",
-            duration : "Sample Duration 5",
-            Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
-            }
-        },
-        {name:"Project 6", Image:"https://i.pinimg.com/564x/d7/a7/4e/d7a74e857301f436f7d9bbb183952a68.jpg",
-        Project : {
-            desc:"This is a project sample description 6",
-            duration : "Sample Duration 6",
-            Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
-            }
-        }
-    ]
+    
 
     return (
         <>
+            <Scroll></Scroll>
             <div className="home">
                 <section className="home-part1">
                     <div className="homebackimage">
@@ -167,7 +119,14 @@ export default function Home() {
                     </p>
                 </section>
 
-
+                <section className="quote">
+                    <img src="https://images.pexels.com/photos/15860615/pexels-photo-15860615/free-photo-of-narrow-alley-in-town.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                    <div>
+                        <h1>❜❜</h1>
+                        <p>We are just an advanced breed of monkeys on a minor planet of a very average star. But we can understand the Universe. That makes us something very special.</p>
+                        <span>Stephen Hawking</span>
+                    </div>
+                </section>  
 
                 <section className="home-part3">
                     <CoolHeading title="My education" subtitle="Learning journey"></CoolHeading>
@@ -204,12 +163,12 @@ export default function Home() {
                 </section>
 
                 <section className="home-part4">
-                    <CoolHeading title="what i bring to the table" subtitle="my skillset"></CoolHeading>
+                    <CoolHeading title="what I do" subtitle="my skillset"></CoolHeading>
                     <section>
                         <div className="card">
                             <img src={DSA} alt="" />
                             <h1>DSA Expertise</h1>
-                            <p>Mastering algorithms and data structures for efficient problem-solving.</p>
+                            <p>Mastering algorithms and DSA for efficient problem-solving.</p>
                         </div>
                         <div className="card">
                             <img src={Design} alt=""/>
@@ -234,17 +193,6 @@ export default function Home() {
                     </section>
                 </section>
 
-                <section className="home-5">
-                    <CoolHeading title="My Recent Projects" subtitle="my works"></CoolHeading>
-                    <div>
-                        {
-                            projects.map((i)=>(
-                                <Model Image={i.Image} name={i.name} Link={i.Link} project={i.Project}></Model>
-                            ))
-                        }
-                    </div>
-                    <button><a href="">Browse Portfolio</a></button>
-                </section>
                 
                 <section className="home-6">
 

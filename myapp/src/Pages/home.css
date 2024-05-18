@@ -131,6 +131,8 @@ a{
     width: 100%;
     color: white;
     padding-bottom: 100px;
+
+    box-shadow: 0px 0px 400px 25vh #050505;
 }
 
 .home-part2 p{
@@ -227,6 +229,7 @@ a{
 .home-part3{
     overflow: hidden;
     color: white;
+    box-shadow: 0px 0px 200px 25vh #101010;
 }
 
 .home-part3 section{
@@ -245,6 +248,63 @@ a{
     left: 50%;
     transform: translateX(-50%);
     z-index: -10;
+}
+
+.quote{
+    height: 105vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -30;
+}
+
+.quote::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    z-index: -5;
+    height: 105vh;
+    width: 100%;
+    opacity: 80%;
+}
+
+.quote img{
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+}
+
+.quote div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 70%;
+    gap: 40px;
+}
+
+.quote h1,
+.quote span,
+.quote p{
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.quote h1{
+    font-size: 8rem;
+    line-height: 50px;
+    color: var(--primaryColor);
+}
+
+.quote span{
+    font-size: 1rem;
+    padding-left: 20px;
+    border-left: 1px solid white;
 }
 
 .education h3{
@@ -334,7 +394,7 @@ a{
     color: white;
     font-family: "Poppins",sans-serif;
     gap: 20px;
-    max-width: 400px;
+    max-width: 350px;
     text-align: center;
     background-color: #151515;
     padding: 40px 0px;
@@ -353,30 +413,6 @@ a{
 
 .home-part4 p{
     font-weight: 300;
+    padding: 0px 20px;
     color: rgb(162, 162, 162);
-}
-
-
-.home-5{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    max-width: 85vw;
-}
-
-.home-5 div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    gap: 40px;
-    font-size: 1.5rem;
-}
-
-.home-5 button{
-    margin-top: 50px;
 }

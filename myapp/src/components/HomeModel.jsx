@@ -41,7 +41,7 @@ export default function HomeModel(props){
                     }
                     {links && 
                         <div>
-                            <h3>Check out the Project here : </h3>
+                            <h3>Check out the Project: </h3>
                             {project.Links.map((link)=>(
                                 <a href={link}>{link}</a>
                             ))}
