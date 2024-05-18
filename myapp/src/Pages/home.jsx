@@ -12,6 +12,7 @@ import homebackimage from '../Images/1x/HomeBackgroundArtboard\ 1.png';
 import Progress from "../components/Progress";
 import CoolCard from "../components/CoolCard";
 import Model from "../components/Model";
+import Footer from "./footer";
 
 import DSA from "../Images/Icons/data.png";
 import Graphic from "../Images/Icons/editorial.png";
@@ -38,7 +39,7 @@ export default function Home() {
         const scrollInstance = new LocomotiveScroll({
             el: scrollRef.current,
             smooth: true,
-            multiplier: 0.75
+            multiplier: 0.6
           });
 
         return () => {
@@ -60,7 +61,7 @@ export default function Home() {
     };
     //typewriter effect in home page section 1
     const [typeEffect] = useTypewriter({
-        words : ['Full Stack Developer','Programmer','Music Enthusiast','VFX Enthusiast','UI/UX Designer','Graphic Designer','Student'],
+        words : ['Full Stack Developer','Programmer','UI/UX Designer','Graphic Designer','Music Enthusiast','VFX Enthusiast','Student'],
         loop:{},
         typeSpeed : 50,
         deleteSpeed: 50
@@ -122,7 +123,7 @@ export default function Home() {
             <div className="home" data-scroll-container ref={scrollRef}>
                 <section className="home-part1">
                     <div className="homebackimage">
-                        <img src={homebackimage} alt="" />
+                        <img src={homebackimage} alt="" data-scroll data-scroll-speed="-3"/>
                     </div>
                     <div className="circle">
                     </div>
@@ -255,7 +256,7 @@ export default function Home() {
                 </section>
 
                 <section className="home-part6">
-                    <img data-scroll data-scroll-speed="-2" src="https://images.pexels.com/photos/164693/pexels-photo-164693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                    <img data-scroll data-scroll-speed="-2" src="https://images.unsplash.com/photo-1605379399843-5870eea9b74e?q=80&w=1798&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                     <div>
                         <h1>500+</h1>
                         <span>Hours of Work</span>
@@ -281,6 +282,8 @@ export default function Home() {
                 </div>
                 <button><a href="">Browse Portfolio</a></button>
             </div>
+
+            <Footer></Footer>
             </div>
         </>
     )
