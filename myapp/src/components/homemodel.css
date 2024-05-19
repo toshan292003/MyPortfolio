@@ -106,3 +106,41 @@
 .modelbox h1{
     padding-top: 50px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .modelbox button{
+        height: 30px;
+        width: 30px;
+        font-size: 0.9rem;
+    }
+    .modelbox button:hover{
+        font-size: 1.3rem;
+    }
+    .model-item p,
+    .model-item ol li,
+    .model-item a{
+        font-size: 0.7rem;
+    }
+    .model-item section span{
+        font-size: 0.8rem;
+    }
+    
+    .modelbox h3{
+        font-size: 1.2rem;
+    }
+    
+}

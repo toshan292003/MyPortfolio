@@ -45,3 +45,29 @@
 .coolcard h1:hover{
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .coolcard{
+        height: 250px;
+        width: 350px;
+    }
+    .coolcard div{
+        height: 250px;
+        width: 350px;
+    }
+    .coolcard h1{
+        font-size: 2rem;
+    }
+}

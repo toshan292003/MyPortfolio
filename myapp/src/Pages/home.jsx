@@ -229,27 +229,27 @@ export default function Home() {
                 <section className="home-part4">
                     <CoolHeading title="what I do" subtitle="my skillset"></CoolHeading>
                     <section>
-                        <div className="card">
+                        <div>
                             <img src={DSA} alt="" />
                             <h1>DSA Expertise</h1>
                             <p>Mastering algorithms and DSA for efficient problem-solving.</p>
                         </div>
-                        <div className="card">
+                        <div>
                             <img src={Design} alt=""/>
                             <h1>Web Design</h1>
                             <p>Crafting visually appealing and user-friendly website designs.</p>
                         </div>
-                        <div className="card">
+                        <div>
                             <img src={Dev} alt="" />
                             <h1>Web Development</h1>
                             <p>Building dynamic and responsive web applications.</p>
                         </div>
-                        <div className="card">
+                        <div>
                             <img src={Graphic} alt="" />
                             <h1>Graphic Design</h1>
                             <p>Creating compelling visual designs for branding and marketing.</p>
                         </div>
-                        <div className="card">
+                        <div>
                             <img src={Motion} alt="" />
                             <h1>Motion Graphics</h1>
                             <p>Animating captivating motion graphics for engaging storytelling.</p>

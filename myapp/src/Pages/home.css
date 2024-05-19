@@ -536,13 +536,13 @@ a{
 
 
     .home-part2 p{
-        padding-right: 50px;
+        padding-right: 30px;
     }
     .home-part2 p section{
-        max-width: 550px;
+        max-width: 500px;
     }
     .home-part2 p section div{
-        margin-right: 50px;
+        margin-right: 30px;
     }
     .home-part2 img{
         left: -100px;
@@ -555,4 +555,79 @@ a{
     .education div{
         max-width: 400px;
     }
+    .education span{
+        margin: 0px 150px;
+    }
 }
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .home-part1{
+        padding: 0px 100px;
+    }
+    .home-part1 img{
+        right: -100px;
+    }
+    .home-part1 div span{
+        font-size: 3rem;
+    }
+    #masterimg{
+        height: 1100px;
+    }
+
+
+
+    .home-part2 p{
+        padding-right: 30px;
+    }
+    .home-part2 p section{
+        max-width: 500px;
+    }
+    .home-part2 p section div{
+        margin-right: 30px;
+    }
+    .home-part2 img{
+        left: -150px;
+        top: 200px;
+        height: 700px;
+    }
+    
+
+    .education div{
+        max-width: 350px;
+    }
+    .education div h1{
+        font-size: 1.5rem;
+    }
+    .education div h2{
+        font-size: 1rem;
+    }
+    .education div p{
+        font-size: 0.8rem;
+    }
+    .education span{
+        margin: 0px 150px;
+    }
+
+
+
+    .home-part4 section div{
+        max-width: 250px;
+    }
+    .home-part4 img{
+        height: 75px;
+    }
+    
+    .home-part4 h1{
+        font-size: 1.2rem;
+    }
+    .home-part4 p{
+        font-size: 0.8rem;
+    }
+    
+
+
+    
+}   
