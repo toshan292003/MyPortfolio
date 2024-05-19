@@ -23,3 +23,18 @@
     font-weight: bold;
     z-index: -10;
 }
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+    .coolheading span{
+        font-size: 6rem;
+    }
+}

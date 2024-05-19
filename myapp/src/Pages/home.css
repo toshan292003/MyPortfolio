@@ -31,7 +31,8 @@
 .homebackimage img{
     top: 0px;
     left: 0px;
-    width: 100vw !important;
+    min-width: 50vw !important;
+    position: absolute;
 }
 
 .home-part1 div{
@@ -119,7 +120,7 @@ a{
 .home-part1 img{
     position: absolute;
     bottom: -400px;
-    right: 1vw;
+    right: 0px;
     z-index: 10;
 }
 
@@ -142,8 +143,8 @@ a{
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: end;
-    justify-content: end;
+    align-items: flex-end;
+    justify-content: center;
     padding-right: 100px;
 }
 
@@ -507,4 +508,51 @@ a{
 .rise-up {
     transform: translateY(-50px);
     transition: transform 0.5s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+    .home-part1{
+        padding: 0px 150px;
+    }
+    .home-part1 img{
+        right: -100px;
+    }
+    .home-part1 div span{
+        font-size: 4rem;
+    }
+
+
+
+    .home-part2 p{
+        padding-right: 50px;
+    }
+    .home-part2 p section{
+        max-width: 550px;
+    }
+    .home-part2 p section div{
+        margin-right: 50px;
+    }
+    .home-part2 img{
+        left: -100px;
+        top: 150px;
+        height: 800px;
+    }
+
+    
+
+    .education div{
+        max-width: 400px;
+    }
 }

@@ -184,7 +184,7 @@ export default function Home() {
                 </section>
 
                 <section className="quote" data-scroll-container ref={scrollRef}>
-                    <img data-scroll data-scroll-speed="-2" src="https://images.pexels.com/photos/164693/pexels-photo-164693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                    <img data-scroll data-scroll-speed="-8" src="https://images.pexels.com/photos/164693/pexels-photo-164693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                     <div>
                         <h1>❜❜</h1>
                         <p>We are just an advanced breed of monkeys on a minor planet of a very average star. But we can understand the Universe. That makes us something very special.</p>
@@ -258,7 +258,7 @@ export default function Home() {
                 </section>
 
                 <section className="home-part6">
-                    <img data-scroll data-scroll-speed="-2" src="https://images.unsplash.com/photo-1605379399843-5870eea9b74e?q=80&w=1798&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                    <img data-scroll data-scroll-speed="-10" src="https://images.unsplash.com/photo-1605379399843-5870eea9b74e?q=80&w=1798&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                     <div>
                         <h1>500+</h1>
                         <span>Hours of Work</span>
