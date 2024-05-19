@@ -63,3 +63,30 @@
     cursor: pointer;
     border-bottom: 2px solid white;
 }
+
+@media screen and (max-width: 900px){
+    .footer h1{
+        font-size: 2.5rem;
+    }
+    .footer-end{
+        font-size: 1rem;
+    }
+    .footer-end section ul{
+        gap: 20px;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .footer h1{
+        font-size: 2rem;
+    }
+    .footer-end{
+        font-size: 0.9rem;
+        padding: 0px 4%;
+        height: 80px;
+    }
+    .footer-end section ul{
+        gap: 0px;
+    }    
+}

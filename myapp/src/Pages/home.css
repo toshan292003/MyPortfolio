@@ -33,6 +33,16 @@
     min-width: 50vw;
     position: absolute;
 }
+.homebackimage::before{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    content: "";
+    background: linear-gradient(90deg,#101010,transparent);
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+}
 
 .home-part1 div {
     display: flex;
@@ -121,11 +131,12 @@ a {
     position: absolute;
     bottom: -400px;
     right: 0px;
-    z-index: 10;
+    z-index: 5;
 }
 
 #masterimg {
     height: 1300px;
+    z-index: 10;
 }
 
 .home-part2 {
@@ -736,15 +747,15 @@ a {
     }
 
     .education div h1 {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
     .education div h2 {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .education div p {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
     .education span {
@@ -761,5 +772,44 @@ a {
     }
     .quote h1 {
         font-size: 6rem;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+    .home-part2 p {
+        padding-right: 0px;
+        align-items: center;
+    }
+    .home-part2 p section{
+        max-width: 80vw;
+    }
+    .home-part2 p section div ul{
+        padding: 10% 5%;
+    }
+
+
+
+    .education div {
+        max-width: 150px;
+    }
+
+    .education div h1 {
+        font-size: 1.3rem;
+    }
+
+    .education div h2 {
+        font-size: 0.8rem;
+    }
+
+    .education div p {
+        font-size: 0.7rem;
+    }
+
+    .education span {
+        font-size: 3rem;
+        margin: 0px 45px;
     }
 }

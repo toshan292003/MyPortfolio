@@ -1,10 +1,21 @@
-import {React,useState} from "react";
+import {React,useState,useEffect} from "react";
 import './navbar.css';
 export default function Navbar() {
     const [click,setclick] = useState(false);
     const [burger,setburger] = useState("☰");
-    const [move,setmove] = useState("translateY(-360px)");
-    const [opacity,setopacity] = useState("0%");
+    const [move,setmove] = useState("translateY(0px)");
+    const [opacity,setopacity] = useState("100%");
+    const [padding,setpadding] = useState("50px 0px");
+
+    useEffect(()=>{
+        if(window.innerWidth <= 700){
+            setburger("☰");
+            setclick(true);
+            setopacity("0%");
+            setmove("translateY(-360px)");
+            setpadding("50px 0px")
+        }
+    },[]);
 
     const changeBurger = ()=>{
         console.log(click);
@@ -13,12 +24,14 @@ export default function Navbar() {
             setclick(false);
             setopacity("100%");
             setmove("translateY(0px)");
+            setpadding("100px 0px")
         }
         else{
             setburger("☰");
             setclick(true);
             setopacity("0%");
             setmove("translateY(-360px)");
+            setpadding("50px 0px")
         }
     }
 
@@ -27,13 +40,13 @@ export default function Navbar() {
             <button onClick={changeBurger} className="navbutton">{burger}</button>
             <div className="navbar" style={{
                     opacity:opacity,
-                    transform:move
+                    transform:move,
+                    padding:padding
                 }}>
                 <section>
                     <ul>
                         <li><a href="/">Home</a></li>
                         <li><a href="/portfolio">Portfolio</a></li>
-                        <li><a href="/experience">Experience</a></li>
                     </ul>
                 </section>
                 <section>

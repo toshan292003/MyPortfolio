@@ -50,7 +50,7 @@
 
 .navbutton {
     background-color: transparent;
-    position: absolute;
+    position: fixed;
     top: 5vh;
     left: 5vh;
     border: none;
@@ -67,10 +67,9 @@
 
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
     .navbar {
         background-color: #151515 ;
-        padding-top: 110px; 
         transform: translateY(0px);
         opacity: 0%;
     }
@@ -83,10 +82,6 @@
 
     .navbar section:nth-child(1) ul li a {
         border-bottom: 2px solid rgba(255, 255, 255, 0.459);
-    }
-
-    .navbar section:nth-child(1) ul li a:hover {
-        background-color: rgba(255, 255, 255, 0.146);
     }
 
     .navbar section ul {

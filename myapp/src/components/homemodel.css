@@ -202,3 +202,39 @@
         left: -70vw;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .modelbox{
+        top: -400px !important;
+        left: -40vw !important;
+    }
+    .model-item:nth-child(2){
+        padding-bottom: 30px;
+    }
+    .model-item p,
+    .model-item ol li,
+    .model-item a{
+        font-size: 0.6rem;
+    }
+    .model-item section span{
+        font-size: 0.8rem;
+    }
+    .modelbox{
+        height: 80vh;
+        top: -200px;
+        left: -65vw;
+    }
+    .modelbox h3{
+        font-size: 0.8rem;
+    }
+    .modelbox h1{
+        font-size: 1.2rem;
+    }
+    .model-item section{
+        gap: 10px;
+    }
+    .model-item{
+        gap: 10px !important;
+    }
+    
+}
