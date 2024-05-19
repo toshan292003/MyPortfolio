@@ -1,9 +1,34 @@
-import React from "react";
+import {React,useState} from "react";
 import './navbar.css';
 export default function Navbar() {
+    const [click,setclick] = useState(false);
+    const [burger,setburger] = useState("☰");
+    const [move,setmove] = useState("translateY(-360px)");
+    const [opacity,setopacity] = useState("0%");
+
+    const changeBurger = ()=>{
+        console.log(click);
+        if(click == true){
+            setburger("✖");
+            setclick(false);
+            setopacity("100%");
+            setmove("translateY(0px)");
+        }
+        else{
+            setburger("☰");
+            setclick(true);
+            setopacity("0%");
+            setmove("translateY(-360px)");
+        }
+    }
+
     return (
         <>
-            <div className="navbar">
+            <button onClick={changeBurger} className="navbutton">{burger}</button>
+            <div className="navbar" style={{
+                    opacity:opacity,
+                    transform:move
+                }}>
                 <section>
                     <ul>
                         <li><a href="/">Home</a></li>

@@ -7,7 +7,6 @@ export default function HomeModel(props){
     const [links,setlinks] = useState(false);
     const [learning,setlearning] = useState(false);
     useEffect(() => {
-        console.log(project.Learnings);
         if(project.awards != undefined){
             setawards(true);
         }
@@ -21,6 +20,8 @@ export default function HomeModel(props){
 
     return(
         <>
+        <div className="Modelmain">
+
         <div className="modelbox">
             <button onClick={props.onClose}>&#10010;</button>
             <div className="model">
@@ -61,6 +62,7 @@ export default function HomeModel(props){
                 </section>
                 </div>
             </div>
+        </div>
         </div>
         </>
     )

@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 .navbar,
-.navbar section{
+.navbar section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     list-style-type: none;
-    gap: 200px;
 }
 
-.navbar section ul{
+.navbar section ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -19,26 +18,83 @@
     gap: 40px;
 }
 
-.navbar{
+.navbar {
     padding: 40px 0px;
     position: fixed;
     background-color: transparent;
-    width: 100vw;
+    width: 100%;
     z-index: 60;
+    padding-top: 0px;
+    transform: translateY(70px);
+    opacity: 100%;
+    transition: all 1s ease;
 }
 
-.navbar section ul li a{
+.navbar section ul li a {
     text-decoration: none;
     color: white;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     border-bottom: 2px solid transparent;
     transition: all .5s ease;
     padding: 10px;
+    border-radius: 3px;
     z-index: 80;
 }
 
-.navbar section ul li a:hover{
+.navbar section ul li a:hover {
     cursor: pointer;
     border-bottom: 2px solid white;
+}
+
+
+.navbutton {
+    background-color: transparent;
+    position: absolute;
+    top: 5vh;
+    left: 5vh;
+    border: none;
+    font-size: 2rem;
+    z-index: 100;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        background-color: #151515 ;
+        padding-top: 110px; 
+        transform: translateY(0px);
+        opacity: 0%;
+    }
+
+    .navbar section ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .navbar section:nth-child(1) ul li a {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.459);
+    }
+
+    .navbar section:nth-child(1) ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.146);
+    }
+
+    .navbar section ul {
+        gap: 20px;
+    }
+
+    .navbutton {
+        visibility: visible;
+        transition: all 0.5s ease;
+    }
 }

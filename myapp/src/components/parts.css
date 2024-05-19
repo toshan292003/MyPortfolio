@@ -66,3 +66,21 @@
         width: auto !important;
     }
 }
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .part section{
+        height: 33.1vh;
+        width: 100vw;
+        border-right:none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.433);
+    }
+    
+    .part section img{
+        height: auto;
+        width: 100% !important;
+    }
+}

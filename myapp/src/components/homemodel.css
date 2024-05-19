@@ -1,5 +1,9 @@
+.Modelmain{
+    position: relative;
+}
+
 .modelbox{
-    position: fixed;
+    position: relative;
     justify-content: space-between;
     background-color: #151515;
     z-index: 100;
@@ -35,6 +39,7 @@
 }
 
 .model{
+    position: absolute;
     display: flex;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
@@ -143,4 +148,57 @@
         font-size: 1.2rem;
     }
     
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    .model{
+        flex-direction: column !important;
+    }
+    .modelbox{
+        height: 120vh;
+        top: -200px;
+        left: -65vw;
+    }
+    #model-img{
+        width: 100%;
+        height: 100%;
+    }
+    #model-img img{
+        height: auto !important;
+        width: 100% !important;
+    }
+    
+
+
+    .model-item:nth-child(2){
+        padding-bottom: 50px;
+    }
+    .model-item p,
+    .model-item ol li,
+    .model-item a{
+        font-size: 0.8rem;
+    }
+    .model-item section span{
+        font-size: 1.2rem;
+    }
+    
+    .modelbox h3{
+        font-size: 1.2rem;
+    }
+    .modelbox h1{
+        font-size: 2rem;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .modelbox{
+        top: -200px;
+        left: -70vw;
+    }
 }

@@ -1,18 +1,17 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Teko:wght@300..700&display=swap');
 @import 'locomotive-scroll/dist/locomotive-scroll.css';
 
-*{
-    font-family: "Poppins",sans-serif;
+* {
+    font-family: "Poppins", sans-serif;
     color: white;
 }
 
-.home{
+.home {
     z-index: -10;
 }
 
-.home-part1{
+.home-part1 {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -28,40 +27,40 @@
     overflow: hidden;
 }
 
-.homebackimage img{
+.homebackimage img {
     top: 0px;
     left: 0px;
     min-width: 50vw;
     position: absolute;
 }
 
-.home-part1 div{
+.home-part1 div {
     display: flex;
     flex-direction: column;
 }
 
-.home-part1 div span{
+.home-part1 div span {
     font-family: "Outfit", sans-serif;
     font-size: 5rem;
     font-weight: 800;
     color: var(--primaryColor);
 }
 
-.home-part1 b{
+.home-part1 b {
     color: white;
 }
 
-.home-part1 div{
+.home-part1 div {
     z-index: 10;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 .home-part1 button,
 .home-5 button,
-.home-part7 button{
+.home-part7 button {
     background-color: var(--primaryColor);
     color: white;
     font-weight: 600;
@@ -71,7 +70,7 @@ a{
     padding: 15px;
     border-radius: 5px;
     width: 250px;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 20px 0px;
     z-index: 10;
     border: 3px solid transparent;
@@ -80,7 +79,7 @@ a{
 
 .home-part1 button:hover,
 .home-5 button:hover,
-.home-part7 button:hover{
+.home-part7 button:hover {
     border-bottom: 3px solid white;
     background-color: #151515;
     cursor: pointer;
@@ -105,30 +104,31 @@ a{
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
 
-    mix-blend-mode:screen;
+    mix-blend-mode: screen;
 }
 
-@keyframes circling{
-    0%{
+@keyframes circling {
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
 
-.home-part1 img{
+.home-part1 img {
     position: absolute;
     bottom: -400px;
     right: 0px;
     z-index: 10;
 }
 
-#masterimg{
+#masterimg {
     height: 1300px;
 }
 
-.home-part2{
+.home-part2 {
     position: relative;
     overflow: hidden;
     z-index: -20;
@@ -139,7 +139,7 @@ a{
     box-shadow: 0px 0px 400px 25vh #050505;
 }
 
-.home-part2 p{
+.home-part2 p {
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -148,7 +148,7 @@ a{
     padding-right: 100px;
 }
 
-.home-part2 p section{
+.home-part2 p section {
     max-width: 600px;
     display: flex;
     flex-direction: column;
@@ -156,14 +156,14 @@ a{
     font-family: "Poppins";
 }
 
-.home-part2 p section h1{
+.home-part2 p section h1 {
     font-weight: 700;
     font-size: 1.4rem;
     text-transform: uppercase;
     color: var(--primaryColor);
 }
 
-.home-part2 p section p{
+.home-part2 p section p {
     font-size: .8rem;
     line-height: 20px;
     text-align: justify;
@@ -171,7 +171,7 @@ a{
     opacity: 80%;
 }
 
-.home-part2 p section div{
+.home-part2 p section div {
     display: flex;
     flex-direction: row;
     background-color: rgba(0, 0, 0, 0.229);
@@ -182,16 +182,16 @@ a{
     justify-content: center;
 }
 
-.home-part2 p section div ul li{
+.home-part2 p section div ul li {
     list-style-type: none;
     font-size: .8rem;
 }
 
-.home-part2 p section img:nth-child(2){
+.home-part2 p section img:nth-child(2) {
     z-index: -10;
 }
 
-.home-part2 p section div ul{
+.home-part2 p section div ul {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -199,12 +199,12 @@ a{
     padding: 40px 60px;
 }
 
-.home-part2 p section div ul:nth-child(2){
+.home-part2 p section div ul:nth-child(2) {
     border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .gradient1,
-.gradient2{
+.gradient2 {
     background: radial-gradient(rgba(0, 157, 255, 0.3), #129dff00, transparent);
     height: 1500px;
     width: 1500px;
@@ -213,16 +213,17 @@ a{
     z-index: -10;
 }
 
-.gradient1{
+.gradient1 {
     top: -790px;
     left: -810px;
 }
-.gradient2{
+
+.gradient2 {
     bottom: -790px;
     right: -810px;
 }
 
-.home-part2 img{
+.home-part2 img {
     position: absolute;
     left: 0px;
     top: 150px;
@@ -230,12 +231,12 @@ a{
 }
 
 
-.home-part3{
+.home-part3 {
     overflow: hidden;
     color: white;
 }
 
-.home-part3 section{
+.home-part3 section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -243,7 +244,7 @@ a{
     gap: 50px;
 }
 
-.line{
+.line {
     height: 500px;
     width: 3px;
     background-color: rgba(0, 157, 255, 0.2);
@@ -253,7 +254,7 @@ a{
     z-index: -10;
 }
 
-.quote{
+.quote {
     height: 105vh;
     width: 100%;
     position: relative;
@@ -265,7 +266,7 @@ a{
     z-index: -30;
 }
 
-.quote::before{
+.quote::before {
     content: "";
     position: absolute;
     background-color: black;
@@ -275,13 +276,13 @@ a{
     opacity: 70%;
 }
 
-.quote img{
+.quote img {
     width: 100%;
     position: absolute;
     z-index: -10;
 }
 
-.quote div{
+.quote div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -292,25 +293,25 @@ a{
 
 .quote h1,
 .quote span,
-.quote p{
+.quote p {
     font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: 1px;
 }
 
-.quote h1{
+.quote h1 {
     font-size: 8rem;
     line-height: 50px;
     color: var(--primaryColor);
 }
 
-.quote span{
+.quote span {
     font-size: 1rem;
     padding-left: 20px;
     border-left: 1px solid white;
 }
 
-.education h3{
+.education h3 {
     height: 10px;
     width: 10px;
     border-radius: 50%;
@@ -323,36 +324,36 @@ a{
     transform: translateX(-50%);
 }
 
-.education{
+.education {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-.education span{
+.education span {
     font-size: 5rem;
     text-transform: uppercase;
     font-weight: bolder;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     color: rgba(255, 255, 255, 0.1);
     margin: 0px 200px;
 }
 
-.education div{
+.education div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 }
 
-.education div h1{
+.education div h1 {
     font-size: 2rem;
     font-weight: 600;
 }
 
-.education div h2{
+.education div h2 {
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 1px;
@@ -360,7 +361,7 @@ a{
     color: var(--primaryColor);
 }
 
-.education div p{
+.education div p {
     max-width: 500px;
     text-align: justify;
     color: rgba(255, 255, 255, 0.515);
@@ -369,17 +370,17 @@ a{
     padding-top: 20px;
 }
 
-.home-part4{
+.home-part4 {
     padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 150px;
-    box-shadow:-10px -10px 50px rgba(255, 255, 255, 0.05);
+    box-shadow: -10px -10px 50px rgba(255, 255, 255, 0.05);
 }
 
-.home-part4 section{
+.home-part4 section {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -389,13 +390,13 @@ a{
     gap: 50px;
 }
 
-.home-part4 section div{
+.home-part4 section div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     gap: 20px;
     max-width: 350px;
     text-align: center;
@@ -405,16 +406,16 @@ a{
     border-radius: 10px;
 }
 
-.home-part4 img{
+.home-part4 img {
     height: 100px;
 }
 
-.home-part4 h1{
+.home-part4 h1 {
     font-size: 1.7rem;
     color: var(--primaryColor);
 }
 
-.home-part4 p{
+.home-part4 p {
     font-weight: 300;
     padding: 0px 20px;
     color: rgb(162, 162, 162);
@@ -422,14 +423,14 @@ a{
 
 .home-part3,
 .home-part4,
-.home-part7{
+.home-part7 {
     box-shadow: 0px 0px 200px 25vh #101010,
-                0px 0px 100px 10vh #101010;
+        0px 0px 100px 10vh #101010;
 }
 
-.home-part6{
+.home-part6 {
     display: flex;
-    flex-direction: roe;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     position: relative;
@@ -438,7 +439,7 @@ a{
     padding: 0% 10%;
 }
 
-.home-part6::before{
+.home-part6::before {
     content: "";
     background-color: black;
     position: absolute;
@@ -448,13 +449,13 @@ a{
     opacity: 40%;
 }
 
-.home-part6 img{
+.home-part6 img {
     position: absolute;
     width: 100%;
     z-index: -10;
 }
 
-.home-part6 div{
+.home-part6 div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -463,12 +464,12 @@ a{
     font-weight: 300;
 }
 
-.home-part6 span{
+.home-part6 span {
     font-size: 1.3rem;
     text-transform: uppercase;
 }
 
-.home-part7{
+.home-part7 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -478,7 +479,7 @@ a{
     padding-top: 50px;
 }
 
-.home-part7 div{
+.home-part7 div {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -489,7 +490,7 @@ a{
     font-size: 1.5rem;
 }
 
-.home-part7 button{
+.home-part7 button {
     margin-top: 50px;
 }
 
@@ -523,39 +524,45 @@ a{
 
 
 @media screen and (max-width: 1300px) {
-    .home-part1{
+    .home-part1 {
         padding: 0px 150px;
     }
-    .home-part1 img{
+
+    .home-part1 img {
         right: -100px;
     }
-    .home-part1 div span{
+
+    .home-part1 div span {
         font-size: 4rem;
     }
 
 
 
-    .home-part2 p{
+    .home-part2 p {
         padding-right: 30px;
     }
-    .home-part2 p section{
+
+    .home-part2 p section {
         max-width: 500px;
     }
-    .home-part2 p section div{
+
+    .home-part2 p section div {
         margin-right: 30px;
     }
-    .home-part2 img{
+
+    .home-part2 img {
         left: -100px;
         top: 150px;
         height: 800px;
     }
 
-    
 
-    .education div{
+
+    .education div {
         max-width: 400px;
     }
-    .education span{
+
+    .education span {
         margin: 0px 150px;
     }
 }
@@ -564,124 +571,195 @@ a{
 
 
 @media screen and (max-width: 1100px) {
-    .home-part1{
+    .home-part1 {
         padding: 0px 100px;
     }
-    .home-part1 img{
+
+    .home-part1 img {
         right: -100px;
     }
-    .home-part1 div span{
+
+    .home-part1 div span {
         font-size: 3rem;
     }
 
 
 
-    .home-part2 p{
+    .home-part2 p {
         padding-right: 30px;
     }
-    .home-part2 p section{
+
+    .home-part2 p section {
         max-width: 500px;
     }
-    .home-part2 p section div{
+
+    .home-part2 p section div {
         margin-right: 30px;
     }
-    .home-part2 img{
+
+    .home-part2 img {
         left: -150px;
         top: 200px;
         height: 700px;
     }
-    
 
-    .quote img{
+
+    .quote img {
         width: auto;
         height: 100%;
     }
 
 
-    .education div{
+    .education div {
         max-width: 350px;
     }
-    .education div h1{
+
+    .education div h1 {
         font-size: 1.5rem;
     }
-    .education div h2{
+
+    .education div h2 {
         font-size: 1rem;
     }
-    .education div p{
+
+    .education div p {
         font-size: 0.8rem;
     }
-    .education span{
+
+    .education span {
         margin: 0px 150px;
     }
 
 
 
-    .home-part4 section div{
+    .home-part4 section div {
         max-width: 250px;
     }
-    .home-part4 img{
+
+    .home-part4 img {
         height: 75px;
     }
-    
-    .home-part4 h1{
+
+    .home-part4 h1 {
         font-size: 1.2rem;
     }
-    .home-part4 p{
+
+    .home-part4 p {
         font-size: 0.8rem;
     }
-}  
+}
 
 
 
 
 
 @media screen and (max-width: 900px) {
-    .home-part1{
+    .home-part1 {
         padding: 0px 75px;
     }
-    .home-part1 div span{
+
+    .home-part1 div span {
         font-size: 3rem;
         position: relative;
     }
-    #masterimg{
+
+    #masterimg {
         right: -300px;
         z-index: 10;
     }
-    .home-part1 div:nth-child(3){
+
+    .home-part1 div:nth-child(3) {
         z-index: 20;
     }
 
 
 
-    .home-part2 p{
+    .home-part2 p {
         padding-right: 0px;
         align-items: center;
     }
-    .home-part2 p h1{
+
+    .home-part2 p h1 {
         display: none;
     }
-    .home-part2 p section div{
+
+    .home-part2 p section div {
         margin-right: 0px;
     }
-    .home-part2 img{
+
+    .home-part2 img {
         visibility: collapse;
     }
 
 
 
-    .education div{
+    .education div {
         max-width: 300px;
     }
-    .education div h1{
+
+    .education div h1 {
         font-size: 1.5rem;
     }
-    .education div h2{
+
+    .education div h2 {
         font-size: 0.9rem;
     }
-    .education div p{
+
+    .education div p {
         font-size: 0.8rem;
     }
-    .education span{
+
+    .education span {
         margin: 0px 90px;
     }
-} 
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .home-part6 {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        height: 700px;
+    }
+
+    .home-part6 img {
+        height: 100%;
+        width: auto !important;
+    }
+
+
+
+    .education div {
+        max-width: 200px;
+    }
+
+    .education div h1 {
+        font-size: 1.1rem;
+    }
+
+    .education div h2 {
+        font-size: 0.7rem;
+    }
+
+    .education div p {
+        font-size: 0.6rem;
+    }
+
+    .education span {
+        font-size: 3.5rem;
+        margin: 0px 60px;
+    }
+
+
+    .quote p {
+        font-size: 1.3rem;
+    }
+    .quote span{
+        font-size: 0.9rem;
+    }
+    .quote h1 {
+        font-size: 6rem;
+    }
+}
