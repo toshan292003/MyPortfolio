@@ -1,18 +1,21 @@
 import {React , useEffect , useState } from "react";
 import "./homemodel.css";
-import Progress from "./Progress";
 
 export default function HomeModel(props){
     const {project} = props;
     const [awards,setawards] = useState(false);
     const [links,setlinks] = useState(false);
+    const [learning,setlearning] = useState(false);
     useEffect(() => {
-        console.log(project.Links);
+        console.log(project.Learnings);
         if(project.awards != undefined){
             setawards(true);
         }
         if(project.Links != undefined){
             setlinks(true);
+        }
+        if(project.Learnings != undefined){
+            setlearning(true);
         }
       }, []);
 
@@ -41,18 +44,20 @@ export default function HomeModel(props){
                     }
                     {links && 
                         <div>
-                            <h3>Check out the Project: </h3>
+                            <h3>Check it out here : </h3>
                             {project.Links.map((link)=>(
                                 <a href={link} target="blank">{link}</a>
                             ))}
                         </div>
                     }
-                    <div>
-                        <h3>Key Learnings : </h3>
-                        {project.Learnings.map((point)=>(
-                            <p>{point}</p>
-                        ))}
-                    </div>
+                    {learning &&
+                        <div>
+                            <h3>Key Learnings : </h3>
+                            {project.Learnings.map((point)=>(
+                                <p>{point}</p>
+                            ))}
+                        </div>
+                    }
                 </section>
                 </div>
             </div>

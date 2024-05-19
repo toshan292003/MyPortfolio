@@ -4,6 +4,8 @@ import CoolHeading from "../components/CoolHeading";
 import Model from "../components/Model";
 
 import SmartHome from "../Images/Projects/SmartHome.png";
+import AmbulanceR from "../Images/Projects/AmbulanceR.png";
+import Water from "../Images/Projects/Water Purity Tracker.png"
 
 export default function Web(){
 
@@ -25,12 +27,21 @@ export default function Web(){
             Learnings : ["The competition honed my problem-solving skills, enabling me to approach challenges with a fresh perspective."]
             }
         },
-        {name:"Project 3", Image:"https://i.pinimg.com/564x/ad/c1/8f/adc18f7eb9df78a4ffa2f2441ae69b2d.jpg",
+        {name:"AmbulanceR", Image:AmbulanceR,
         Project : {
-            desc:"This is a project sample description 3",
-            duration : "Sample Duration 3",
-            awards : ["Award 2"],
-            Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
+            desc:"AmbulanceR is an innovative system that streamlines medical emergencies. With just a click, it alerts the nearest hospital, dispatches an ambulance, and notifies the victim's loved ones via SMS. Additionally, it offers a convenient booking feature for medical assistance at future events or performances, ensuring comprehensive healthcare accessibility.",
+            duration : "20 Feb - 11 Mar 2023",
+            awards : ["AmbulanceR selected for prestigious Project Expo at Sahyadri College of Engineering and Management."],
+            Links : ["https://github.com/toshan292003/mini-project"],
+            Learnings : ["Established database connections with MongoDB using Node.js","Implemented Create, Read, Update, and Delete operations efficiently"]
+        }    
+        },
+        {name:"Water Purity Tracker", Image:Water,
+        Project : {
+            desc:"Water Purity Tracker is a comprehensive application that monitors the purity levels of water bodies by analyzing various parameters against standard values. Users can input parametric details, and the app classifies water bodies as pure or contaminated. It displays the top 6 purest water bodies recorded in the database, provides detailed parametric information for each water body, and offers filtering options by location and parameters.",
+            duration : "02 Mar - 15 Mar 2023",
+            Links : ["https://github.com/toshan292003/DBMS-project-5thSem"],
+            Learnings : ["Developed APIs for dynamic content rendering on the website","Integrated MySQL database for efficient data storage and retrieval","Implemented SQL queries for filtering, sorting, and manipulating data","Learned to handle and process data from user inputs and database queries"]
         }    
         }
     ]
