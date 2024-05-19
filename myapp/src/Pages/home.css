@@ -31,7 +31,7 @@
 .homebackimage img{
     top: 0px;
     left: 0px;
-    min-width: 50vw !important;
+    min-width: 50vw;
     position: absolute;
 }
 
@@ -125,7 +125,7 @@ a{
 }
 
 #masterimg{
-    height: 1200px;
+    height: 1300px;
 }
 
 .home-part2{
@@ -573,9 +573,6 @@ a{
     .home-part1 div span{
         font-size: 3rem;
     }
-    #masterimg{
-        height: 1100px;
-    }
 
 
 
@@ -594,6 +591,12 @@ a{
         height: 700px;
     }
     
+
+    .quote img{
+        width: auto;
+        height: 100%;
+    }
+
 
     .education div{
         max-width: 350px;
@@ -626,8 +629,59 @@ a{
     .home-part4 p{
         font-size: 0.8rem;
     }
-    
+}  
 
 
-    
-}   
+
+
+
+@media screen and (max-width: 900px) {
+    .home-part1{
+        padding: 0px 75px;
+    }
+    .home-part1 div span{
+        font-size: 3rem;
+        position: relative;
+    }
+    #masterimg{
+        right: -300px;
+        z-index: 10;
+    }
+    .home-part1 div:nth-child(3){
+        z-index: 20;
+    }
+
+
+
+    .home-part2 p{
+        padding-right: 0px;
+        align-items: center;
+    }
+    .home-part2 p h1{
+        display: none;
+    }
+    .home-part2 p section div{
+        margin-right: 0px;
+    }
+    .home-part2 img{
+        visibility: collapse;
+    }
+
+
+
+    .education div{
+        max-width: 300px;
+    }
+    .education div h1{
+        font-size: 1.5rem;
+    }
+    .education div h2{
+        font-size: 0.9rem;
+    }
+    .education div p{
+        font-size: 0.8rem;
+    }
+    .education span{
+        margin: 0px 90px;
+    }
+} 
