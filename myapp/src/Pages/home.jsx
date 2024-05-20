@@ -95,28 +95,6 @@ export default function Home() {
             awards : ["Award 2"],
             Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
         }    
-        },
-        {name:"Project 4", Image:"https://i.pinimg.com/236x/e3/75/48/e37548de31d5fe127f3028039efcd46d.jpg",
-        Project : {
-            desc:"This is a project sample description 4",
-            duration : "Sample Duration 4",
-            awards : ["Award 3", " Award 3"],
-            Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
-        }
-        },
-        {name:"Project 5", Image:"https://i.pinimg.com/564x/1d/f1/98/1df1981458a824231ccca9289daff828.jpg",
-        Project : {
-            desc:"This is a project sample description 5",
-            duration : "Sample Duration 5",
-            Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
-            }
-        },
-        {name:"Project 6", Image:"https://i.pinimg.com/564x/d7/a7/4e/d7a74e857301f436f7d9bbb183952a68.jpg",
-        Project : {
-            desc:"This is a project sample description 6",
-            duration : "Sample Duration 6",
-            Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
-            }
         }
     ]
 
