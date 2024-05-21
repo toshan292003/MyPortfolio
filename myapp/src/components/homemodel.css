@@ -1,5 +1,5 @@
 .Modelmain{
-    position: relative;
+    position: absolute;
 }
 
 .modelbox{
@@ -10,8 +10,6 @@
     border-radius: 10px;
     width: 90vw;
     overflow: hidden;
-    top: -50vh;
-    left: -50vw;
     height: 90vh;
     position: absolute;
 }
@@ -161,8 +159,6 @@
     }
     .modelbox{
         height: 120vh;
-        top: -200px;
-        left: -65vw;
     }
     #model-img{
         width: 100%;
@@ -193,22 +189,12 @@
     .modelbox h1{
         font-size: 2rem;
     }
-    
 }
 
-
-
-@media screen and (max-width: 700px) {
-    .modelbox{
-        top: -200px;
-        left: -70vw;
-    }
-}
 
 @media screen and (max-width: 500px) {
-    .modelbox{
-        top: -400px !important;
-        left: -40vw !important;
+    .Modelmain{
+        position: relative;
     }
     .model-item:nth-child(2){
         padding-bottom: 30px;
@@ -223,8 +209,6 @@
     }
     .modelbox{
         height: 80vh;
-        top: -200px;
-        left: -65vw;
     }
     .modelbox h3{
         font-size: 0.8rem;
@@ -237,6 +221,5 @@
     }
     .model-item{
         gap: 10px !important;
-    }
-    
+    }   
 }

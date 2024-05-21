@@ -1,6 +1,6 @@
 //importing basic react requirements and libraries
-import React, { useState ,useEffect, useRef } from "react";
-import {useTypewriter,Cursor} from 'react-simple-typewriter';
+import React, { useState, useEffect, useRef } from "react";
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 //importing components and pages
 import HomePage from './HomePagePortrait.png';
@@ -27,16 +27,16 @@ import LocomotiveScroll from 'locomotive-scroll';
 
 
 export default function Home() {
-    const [OffsetY,setOffsetY] = useState(0);
+    const [OffsetY, setOffsetY] = useState(0);
 
     const scrollRef = useRef(null);
 
-    const handleScroll = ()=>{
+    const handleScroll = () => {
         setOffsetY(window.pageYOffset);
     }
 
-    useEffect(()=>{
-        window.addEventListener("scroll",handleScroll);
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
         const scrollInstance = new LocomotiveScroll({
             el: scrollRef.current,
             smooth: true,
@@ -45,56 +45,59 @@ export default function Home() {
         return () => {
             scrollInstance.destroy();
         };
-          
+
     }, []);
 
-    
+
 
 
     //function for download option in home page seciton 1
     const RESUME_PDF_FILE = "http://localhost:3000/Resume.pdf";
-    const downloadFile = (url)=>{
+    const downloadFile = (url) => {
         const fileName = url.split("/").pop();
         const aTag = document.createElement("a");
         aTag.href = url;
-        aTag.setAttribute("download",fileName);
+        aTag.setAttribute("download", fileName);
         document.body.appendChild(aTag);
         aTag.click();
         aTag.remove();
     };
     //typewriter effect in home page section 1
     const [typeEffect] = useTypewriter({
-        words : ['Full Stack Developer','Programmer','UI/UX Designer','Graphic Designer','Music Enthusiast','VFX Enthusiast','Student'],
-        loop:{},
-        typeSpeed : 50,
+        words: ['Full Stack Developer', 'Programmer', 'UI/UX Designer', 'Graphic Designer', 'Music Enthusiast', 'VFX Enthusiast', 'Student'],
+        loop: {},
+        typeSpeed: 50,
         deleteSpeed: 50
     })
 
-    const projects=[
-        {name:"JMV Impex", Image:"https://cdn.pixabay.com/photo/2024/04/22/18/53/ai-generated-8713376_1280.jpg",
-        Project : {
-            desc:"JMV Impex, a leading mechanical engineering and parts production company, commissioned a full-fledged Landing Page to showcase their capabilities. The visually stunning and user-friendly website, meticulously designed, offers a comprehensive understanding of JMV Impex's expertise, products, and services. With dynamic elements, interactive features, and high-quality visuals, the website brings the company's offerings to life, serving as a powerful marketing tool and solidifying their online presence in the industry.",
-            duration : "3 May - 13 Jun 2023",
-            Links : [   "https://jmvimpex.in/","https://www.figma.com/design/VEAYVe2AMoDEC8l2s4gEuE/JMV-Impex-UI-Design?node-id=8-25&t=GixhHkfeXkFMPLtL-0"],
-            Learnings : ["Effective team and client communication strategies.","Understanding the basic workflow of website development projects."]
-        }
-        },
-        {name:"Smart House", Image:SmartHome,
-        Project : {
-            desc:"This award-winning UI/UX design revolutionizes home automation through an intuitive smartphone app. Users can effortlessly monitor and control all home appliances, turning them on/off remotely. The real-time status updates allow seamless tracking of each device's condition. This innovative solution streamlines home management, making it convenient and user-friendly.",
-            duration : "29 Apr - 29 Apr 2023",
-            awards : ["Secured First Place in UI/UX Competition conducted by YentechMania 2024 at Yenepoya IT, Moodibidri"],
-            Links : ["https://www.figma.com/design/7g2D7hnOL459uUy86Y0yW5/Untitled?t=tlhoQg5rRcl07l2G-0"],
-            Learnings : ["The competition honed my problem-solving skills, enabling me to approach challenges with a fresh perspective."]
+    const projects = [
+        {
+            name: "JMV Impex", Image: "https://cdn.pixabay.com/photo/2024/04/22/18/53/ai-generated-8713376_1280.jpg",
+            Project: {
+                desc: "JMV Impex, a leading mechanical engineering and parts production company, commissioned a full-fledged Landing Page to showcase their capabilities. The visually stunning and user-friendly website, meticulously designed, offers a comprehensive understanding of JMV Impex's expertise, products, and services. With dynamic elements, interactive features, and high-quality visuals, the website brings the company's offerings to life, serving as a powerful marketing tool and solidifying their online presence in the industry.",
+                duration: "3 May - 13 Jun 2023",
+                Links: ["https://jmvimpex.in/", "https://www.figma.com/design/VEAYVe2AMoDEC8l2s4gEuE/JMV-Impex-UI-Design?node-id=8-25&t=GixhHkfeXkFMPLtL-0"],
+                Learnings: ["Effective team and client communication strategies.", "Understanding the basic workflow of website development projects."]
             }
         },
-        {name:"Project 3", Image:"https://i.pinimg.com/564x/ad/c1/8f/adc18f7eb9df78a4ffa2f2441ae69b2d.jpg",
-        Project : {
-            desc:"This is a project sample description 3",
-            duration : "Sample Duration 3",
-            awards : ["Award 2"],
-            Learnings : ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?","Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
-        }    
+        {
+            name: "Smart House", Image: SmartHome,
+            Project: {
+                desc: "This award-winning UI/UX design revolutionizes home automation through an intuitive smartphone app. Users can effortlessly monitor and control all home appliances, turning them on/off remotely. The real-time status updates allow seamless tracking of each device's condition. This innovative solution streamlines home management, making it convenient and user-friendly.",
+                duration: "29 Apr - 29 Apr 2023",
+                awards: ["Secured First Place in UI/UX Competition conducted by YentechMania 2024 at Yenepoya IT, Moodibidri"],
+                Links: ["https://www.figma.com/design/7g2D7hnOL459uUy86Y0yW5/Untitled?t=tlhoQg5rRcl07l2G-0"],
+                Learnings: ["The competition honed my problem-solving skills, enabling me to approach challenges with a fresh perspective."]
+            }
+        },
+        {
+            name: "Project 3", Image: "https://i.pinimg.com/564x/ad/c1/8f/adc18f7eb9df78a4ffa2f2441ae69b2d.jpg",
+            Project: {
+                desc: "This is a project sample description 3",
+                duration: "Sample Duration 3",
+                awards: ["Award 2"],
+                Learnings: ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?", "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
+            }
         }
     ]
 
@@ -103,16 +106,16 @@ export default function Home() {
             <div className="home" data-scroll-container ref={scrollRef}>
                 <section className="home-part1">
                     <div className="homebackimage">
-                        <img src={homebackimage} alt="" data-scroll data-scroll-speed="-3"/>
+                        <img src={homebackimage} alt="" data-scroll data-scroll-speed="-3" />
                     </div>
                     <div className="circle">
                     </div>
                     <div>
                         <h2>Hello I'm <b>TOSHAN S MAINDAN</b></h2>
-                        <span>{typeEffect}<Cursor cursorStyle='|'/></span>
+                        <span>{typeEffect}<Cursor cursorStyle='|' /></span>
                         <button onClick={() => downloadFile(RESUME_PDF_FILE)}>Download Resume</button>
                     </div>
-                    <img src={HomePage} id="masterimg" alt="" data-scroll data-scroll-speed="-1"/>
+                    <img src={HomePage} id="masterimg" alt="" data-scroll data-scroll-speed="-1" />
                 </section>
 
 
@@ -123,10 +126,15 @@ export default function Home() {
                     <CoolHeading title="about me" subtitle="who am i"></CoolHeading>
                     <p>
                         <section>
-                            <img src={About} alt="" data-scroll data-scroll-speed="-1"/>
+                            <img src={About} alt="" data-scroll data-scroll-speed="-1" />
                             <img src={AboutBg} alt="" />
                             <h1>Something About Me</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa ab reiciendis sit reprehenderit ea soluta illo quae obcaecati quaerat, expedita enim nisi temporibus cum officiis quam error sed eligendi necessitatibus voluptatum ipsam corporis. Aperiam dicta vitae eum. Dolorum nisi inventore ut tempora beatae totam aspernatur, error fugit quisquam soluta quod!</p>
+                            <p>Hi! I'm Toshan, A passionate front-end developer with expertise in CSS, React.js, MERN stack,
+                                C++ and DSA. Currently exploring 3D web development using Three.js to create visually
+                                immersive websites. Mixing it up with video editing in After Effects, 3D modeling in Blender
+                                trying to recreate cinematic shots. Hobbies include video gaming and learning to play the
+                                electric guitar. Committed to writing clean, optimized code while introducing innovative ideas.
+                                Aiming to contribute my skills for developing stunning projects.</p>
                             <div>
                                 <ul>
                                     <li>
@@ -168,7 +176,7 @@ export default function Home() {
                         <p>We are just an advanced breed of monkeys on a minor planet of a very average star. But we can understand the Universe. That makes us something very special.</p>
                         <span>Stephen Hawking</span>
                     </div>
-                </section>  
+                </section>
 
                 <section className="home-part3">
                     <CoolHeading title="My education" subtitle="Learning journey"></CoolHeading>
@@ -213,7 +221,7 @@ export default function Home() {
                             <p>Mastering algorithms and DSA for efficient problem-solving.</p>
                         </div>
                         <div>
-                            <img src={Design} alt=""/>
+                            <img src={Design} alt="" />
                             <h1>Web Design</h1>
                             <p>Crafting visually appealing and user-friendly website designs.</p>
                         </div>
@@ -251,19 +259,19 @@ export default function Home() {
                     </div>
                 </section>
 
-            <div className="home-part7">
-                <CoolHeading title="My Portfolio" subtitle="my projects"></CoolHeading>
-                <div>
-                    {
-                        projects.map((i)=>(
-                            <Model Image={i.Image} name={i.name} Link={i.Link} project={i.Project}></Model>
-                        ))
-                    }
+                <div className="home-part7">
+                    <CoolHeading title="My Portfolio" subtitle="my projects"></CoolHeading>
+                    <div>
+                        {
+                            projects.map((i) => (
+                                <Model Image={i.Image} name={i.name} Link={i.Link} project={i.Project}></Model>
+                            ))
+                        }
+                    </div>
+                    <button><a href="./portfolio">Browse Portfolio</a></button>
                 </div>
-                <button><a href="./portfolio">Browse Portfolio</a></button>
-            </div>
 
-            <Footer></Footer>
+                <Footer></Footer>
             </div>
         </>
     )
