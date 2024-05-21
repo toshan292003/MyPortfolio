@@ -191,11 +191,13 @@
     }
 }
 
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     .Modelmain{
         position: relative;
     }
+}
+
+@media screen and (max-width: 500px) {
     .model-item:nth-child(2){
         padding-bottom: 30px;
     }

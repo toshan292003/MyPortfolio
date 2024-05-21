@@ -5,7 +5,7 @@ import Model from "../components/Model";
 
 import SmartHome from "../Images/Projects/SmartHome.png";
 import AmbulanceR from "../Images/Projects/AmbulanceR.png";
-import Water from "../Images/Projects/Water Purity Tracker.png"
+import Water from "../Images/Projects/Water Purity Tracker.png";
 
 export default function Web(){
 

@@ -21,6 +21,8 @@ import Motion from "../Images/Icons/lightning.png";
 import Design from "../Images/Icons/webpage.png";
 
 import SmartHome from "../Images/Projects/SmartHome.png";
+import Water from "../Images/Projects/Water Purity Tracker.png"
+
 
 import "./locomotive.css";
 import LocomotiveScroll from 'locomotive-scroll';
@@ -90,14 +92,13 @@ export default function Home() {
                 Learnings: ["The competition honed my problem-solving skills, enabling me to approach challenges with a fresh perspective."]
             }
         },
-        {
-            name: "Project 3", Image: "https://i.pinimg.com/564x/ad/c1/8f/adc18f7eb9df78a4ffa2f2441ae69b2d.jpg",
-            Project: {
-                desc: "This is a project sample description 3",
-                duration: "Sample Duration 3",
-                awards: ["Award 2"],
-                Learnings: ["Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?", "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sapiente?"]
-            }
+        {name:"Water Purity Tracker", Image:Water,
+        Project : {
+            desc:"Water Purity Tracker is a comprehensive application that monitors the purity levels of water bodies by analyzing various parameters against standard values. Users can input parametric details, and the app classifies water bodies as pure or contaminated. It displays the top 6 purest water bodies recorded in the database, provides detailed parametric information for each water body, and offers filtering options by location and parameters.",
+            duration : "02 Mar - 15 Mar 2023",
+            Links : ["https://github.com/toshan292003/DBMS-project-5thSem"],
+            Learnings : ["Developed APIs for dynamic content rendering on the website","Integrated MySQL database for efficient data storage and retrieval","Implemented SQL queries for filtering, sorting, and manipulating data","Learned to handle and process data from user inputs and database queries"]
+        }    
         }
     ]
 
@@ -216,19 +217,19 @@ export default function Home() {
                     <CoolHeading title="what I do" subtitle="my skillset"></CoolHeading>
                     <section>
                         <div>
-                            <img src={DSA} alt="" />
-                            <h1>DSA Expertise</h1>
-                            <p>Mastering algorithms and DSA for efficient problem-solving.</p>
-                        </div>
-                        <div>
                             <img src={Design} alt="" />
-                            <h1>Web Design</h1>
+                            <h1>UI/UX Design</h1>
                             <p>Crafting visually appealing and user-friendly website designs.</p>
                         </div>
                         <div>
                             <img src={Dev} alt="" />
                             <h1>Web Development</h1>
                             <p>Building dynamic and responsive web applications.</p>
+                        </div>
+                        <div>
+                            <img src={DSA} alt="" />
+                            <h1>Competitive Coding</h1>
+                            <p>Mastering algorithms and DSA for efficient problem-solving.</p>
                         </div>
                         <div>
                             <img src={Graphic} alt="" />
