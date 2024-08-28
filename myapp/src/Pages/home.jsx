@@ -28,6 +28,18 @@ import "./locomotive.css";
 import LocomotiveScroll from 'locomotive-scroll';
 
 
+import RCT from "../Images/Icons/react.png";
+import C from "../Images/Icons/c++.png";
+import tailwind from "../Images/Icons/tailwind.png";
+import html from "../Images/Icons/html5.png";
+import css5 from "../Images/Icons/css5.png";
+import Node from "../Images/Icons/Node.png";
+import threejs from "../Images/Icons/threejs.png";
+import mysql from "../Images/Icons/mysql.png";
+import mongodb from "../Images/Icons/mongodb.png";
+import python from "../Images/Icons/python.png";
+import express from "../Images/Icons/express.png";
+
 export default function Home() {
     const [OffsetY, setOffsetY] = useState(0);
 
@@ -92,15 +104,38 @@ export default function Home() {
                 Learnings: ["The competition honed my problem-solving skills, enabling me to approach challenges with a fresh perspective."]
             }
         },
-        {name:"Water Purity Tracker", Image:Water,
-        Project : {
-            desc:"Water Purity Tracker is a comprehensive application that monitors the purity levels of water bodies by analyzing various parameters against standard values. Users can input parametric details, and the app classifies water bodies as pure or contaminated. It displays the top 6 purest water bodies recorded in the database, provides detailed parametric information for each water body, and offers filtering options by location and parameters.",
-            duration : "02 Mar - 15 Mar 2023",
-            Links : ["https://github.com/toshan292003/DBMS-project-5thSem"],
-            Learnings : ["Developed APIs for dynamic content rendering on the website","Integrated MySQL database for efficient data storage and retrieval","Implemented SQL queries for filtering, sorting, and manipulating data","Learned to handle and process data from user inputs and database queries"]
-        }    
+        {
+            name: "Water Purity Tracker", Image: Water,
+            Project: {
+                desc: "Water Purity Tracker is a comprehensive application that monitors the purity levels of water bodies by analyzing various parameters against standard values. Users can input parametric details, and the app classifies water bodies as pure or contaminated. It displays the top 6 purest water bodies recorded in the database, provides detailed parametric information for each water body, and offers filtering options by location and parameters.",
+                duration: "02 Mar - 15 Mar 2023",
+                Links: ["https://github.com/toshan292003/DBMS-project-5thSem"],
+                Learnings: ["Developed APIs for dynamic content rendering on the website", "Integrated MySQL database for efficient data storage and retrieval", "Implemented SQL queries for filtering, sorting, and manipulating data", "Learned to handle and process data from user inputs and database queries"]
+            }
         }
     ]
+
+    const [skillbox, setskillbox] = useState(
+        ["#404040", "transparent", "transparent"]
+    )
+
+    const [skills, setskills] = useState([{img:RCT,name:"React Js"}, {img:tailwind,name:"Tailwind"}, {img:html,name:"HTML5"}, {img:css5,name:"CSS5"}, {img:threejs,name:"Three JS"}])
+
+    const skillclick = (key) => {
+        if (key == 1) {
+            setskillbox(["#404040", "transparent", "transparent"])
+            setskills([{img:RCT,name:"React Js"}, {img:tailwind,name:"Tailwind"}, {img:html,name:"HTML5"}, {img:css5,name:"CSS5"}, {img:threejs,name:"Three JS"}])
+        }
+        if (key == 2) {
+            setskillbox(["transparent", "#404040", "transparent"])
+            setskills([{img:Node,name:"Node Js"},{img:python,name:"Python"},{img:express,name:"Express Js"}])
+        }
+        if (key == 3) {
+            setskillbox(["transparent", "transparent", "#404040"])
+            setskills([{img:mongodb,name:"MongoDB"},{img:C,name:"C++"},{img:mysql,name:"MySQL"}])
+        }
+    }
+
 
     return (
         <>
@@ -215,7 +250,7 @@ export default function Home() {
 
                 <section className="home-part4">
                     <CoolHeading title="what I do" subtitle="my skillset"></CoolHeading>
-                    <section>
+                    <section className="home-part4-seciton1">
                         <div>
                             <img src={Design} alt="" />
                             <h1>UI/UX Design</h1>
@@ -240,6 +275,23 @@ export default function Home() {
                             <img src={Motion} alt="" />
                             <h1>Motion Graphics</h1>
                             <p>Animating captivating motion graphics for engaging storytelling.</p>
+                        </div>
+                    </section>
+                    <section className="home-part4-seciton2">
+                        <div>
+                            <button onClick={() => skillclick(1)} style={{ backgroundColor: skillbox[0] }}>Frontend</button>
+                            <button onClick={() => skillclick(2)} style={{ backgroundColor: skillbox[1] }}>Backend</button>
+                            <button onClick={() => skillclick(3)} style={{ backgroundColor: skillbox[2] }}>Misc</button>
+                        </div>
+                        <div>
+                            {
+                                skills.map((i) => (
+                                    <b>
+                                        <img src={i.img}/>
+                                        <h1>{i.name}</h1>
+                                    </b>
+                                ))
+                            }
                         </div>
                     </section>
                 </section>
