@@ -7,12 +7,12 @@ import Experience from './Pages/Experience';
 import Web from './Pages/Web';
 import Designing from './Pages/Designing';
 import Cinematography from './Pages/Cinematography';
+import GameOfLife from './games/gameoflife';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar></Navbar>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/portfolio' element={<Portfolio/>}></Route>
@@ -20,6 +20,7 @@ function App() {
           <Route path='/portfolio/web' element={<Web/>}></Route>
           <Route path='/portfolio/designing' element={<Designing/>}></Route>
           <Route path='/portfolio/cinema' element={<Cinematography/>}></Route>
+          <Route path='/games/gameoflife' element={<GameOfLife/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

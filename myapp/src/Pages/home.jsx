@@ -13,6 +13,7 @@ import Progress from "../components/Progress";
 import CoolCard from "../components/CoolCard";
 import Model from "../components/Model";
 import Footer from "./footer";
+import Navbar from "./navbar";
 
 import DSA from "../Images/Icons/data.png";
 import Graphic from "../Images/Icons/editorial.png";
@@ -139,6 +140,8 @@ export default function Home() {
 
     return (
         <>
+            <Navbar></Navbar>
+
             <div className="home" data-scroll-container ref={scrollRef}>
                 <section className="home-part1">
                     <div className="homebackimage">
@@ -300,7 +303,7 @@ export default function Home() {
                     <img data-scroll data-scroll-speed="-10" src="https://images.unsplash.com/photo-1605379399843-5870eea9b74e?q=80&w=1798&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                     <div>
                         <h1>1000+</h1>
-                        <span>Hours of Work</span>
+                        <span>Hours of Typing</span>
                     </div>
                     <div>
                         <h1>5</h1>
@@ -321,9 +324,8 @@ export default function Home() {
                             ))
                         }
                     </div>
-                    <button><a href="./portfolio">Browse Portfolio</a></button>
+                    <button><a href="./portfolio">Browse All Projects</a></button>
                 </div>
-
                 <Footer></Footer>
             </div>
         </>

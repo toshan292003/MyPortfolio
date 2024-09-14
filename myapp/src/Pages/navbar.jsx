@@ -47,6 +47,7 @@ export default function Navbar() {
                     <ul>
                         <li><a href="/">Home</a></li>
                         <li><a href="/portfolio">Portfolio</a></li>
+                        <li><a href="/games/gameoflife">Games</a></li>
                     </ul>
                 </section>
                 <section>

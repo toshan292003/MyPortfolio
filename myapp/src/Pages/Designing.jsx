@@ -2,6 +2,7 @@ import {React} from "react";
 import Footer from "./footer";
 import CoolHeading from "../components/CoolHeading";
 import Model from "../components/Model";
+import Navbar from "./navbar";
 
 import CAD from "../Images/Projects/CAD Workshop Challengers.png";
 export default function Designing(){
@@ -34,6 +35,7 @@ export default function Designing(){
 
     return(
         <>
+            <Navbar></Navbar>
             <div className="home-part7">
                 <CoolHeading title="Graphic Designing" subtitle="my projects"></CoolHeading>
                 <div>

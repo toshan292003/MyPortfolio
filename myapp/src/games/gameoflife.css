@@ -1,0 +1,118 @@
+.Game-of-life{
+    min-width: 100vw;
+}
+
+.Game-of-life .button-grid {
+    display: grid;
+    width: fit-content;
+    gap: 0;
+}
+
+.Game-of-life .grid-button {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 12px;
+    background-color: transparent;
+}
+
+.Game-of-life .grid-button.active {
+    background-color: rgb(255, 255, 255);
+}
+
+.Game-of-life .start-button,
+.Game-of-life .stop-button,
+.Game-of-life .reset-button{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 1);
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.Game-of-life .start-button::before,
+.Game-of-life .stop-button::before,
+.Game-of-life .reset-button::before{
+    content: "";
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    z-index: -1;
+    background: linear-gradient(#f1f1f1,#202020);
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.Game-of-life .start-button:hover,
+.Game-of-life .stop-button:hover,
+.Game-of-life .reset-button:hover{
+    cursor: pointer;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 1),
+                inset 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.Game-of-life .start-button {
+    background-color: #34E482;
+}
+
+.Game-of-life .stop-button {
+    background-color: #FC3F33;
+}
+
+.Game-of-life .reset-button {
+    background-color: #FEE80D;
+}
+
+.Game-of-life .grid-button :hover{
+    background-color: red;
+}
+
+.Game-of-life h1{
+    text-align: center;
+    margin: 50px;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.Game-of-life section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.Game-of-life section p{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+
+.Game-of-life section span{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.Game-of-life section i:nth-child(3){
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.Game-of-life b{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    gap: 5px;
+    font-size: 1.3rem;
+}

@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "./footer";
 import CoolHeading from "../components/CoolHeading";
 import Model from "../components/Model";
+import Navbar from "./navbar";
 
 export default function Cinematography(){
 
@@ -58,6 +59,7 @@ export default function Cinematography(){
 
     return(
         <>
+            <Navbar></Navbar>
             <div className="home-part7">
                 <CoolHeading title="Cinematography" subtitle="my projects"></CoolHeading>
                 <div>

@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "./footer";
 import CoolHeading from "../components/CoolHeading";
 import Model from "../components/Model";
-
+import Navbar from "./navbar";
 import SmartHome from "../Images/Projects/SmartHome.png";
 import AmbulanceR from "../Images/Projects/AmbulanceR.png";
 import Water from "../Images/Projects/Water Purity Tracker.png";
@@ -48,6 +48,7 @@ export default function Web(){
 
     return(
         <>
+            <Navbar></Navbar>
             <div className="home-part7">
                 <CoolHeading title="Web Development" subtitle="my projects"></CoolHeading>
                 <div>
