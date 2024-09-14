@@ -4,7 +4,7 @@ import CoolHeading from "../components/CoolHeading";
 import Model from "../components/Model";
 import Navbar from "./navbar";
 
-export default function Cinematography(){
+export default function Visualizations(){
 
     const projects=[
         {name:"Project 1", Image:"https://i.pinimg.com/564x/6e/ca/15/6eca15a37c66d0e2cdc52ae0ef4eecc2.jpg",
@@ -61,7 +61,7 @@ export default function Cinematography(){
         <>
             <Navbar></Navbar>
             <div className="home-part7">
-                <CoolHeading title="Cinematography" subtitle="my projects"></CoolHeading>
+                <CoolHeading title="Games and Visualizations" subtitle="my projects"></CoolHeading>
                 <div>
                     {
                         projects.map((i)=>(
