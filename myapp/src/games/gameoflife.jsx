@@ -106,6 +106,7 @@ const GameOfLife = () => {
 
     return (
         <div className='Game-of-life'>
+            <a href="/">&#8617;</a>
             <h1>Welcome to Toshi's Game of Life</h1>
             <section>
                 <span>Move these sliders to change grid size</span>
