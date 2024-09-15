@@ -63,9 +63,6 @@ export default function Home() {
 
     }, []);
 
-
-
-
     //function for download option in home page seciton 1
     const RESUME_PDF_FILE = "http://localhost:3000/Resume.pdf";
     const downloadFile = (url) => {
