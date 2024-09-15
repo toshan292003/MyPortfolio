@@ -43,7 +43,7 @@ import express from "../Images/Icons/express.png";
 
 export default function Home() {
     const [OffsetY, setOffsetY] = useState(0);
-
+    const googleDriveLink = "https://drive.google.com/uc?export=download&id=1fqHAXPCXVTPiBBEnz_0LTRgaDbMfEgZR";
     const scrollRef = useRef(null);
 
     const handleScroll = () => {
@@ -120,20 +120,20 @@ export default function Home() {
         ["#404040", "transparent", "transparent"]
     )
 
-    const [skills, setskills] = useState([{img:RCT,name:"React Js"}, {img:tailwind,name:"Tailwind"}, {img:html,name:"HTML5"}, {img:css5,name:"CSS5"}, {img:threejs,name:"Three JS"}])
+    const [skills, setskills] = useState([{ img: RCT, name: "React Js" }, { img: tailwind, name: "Tailwind" }, { img: html, name: "HTML5" }, { img: css5, name: "CSS5" }, { img: threejs, name: "Three JS" }])
 
     const skillclick = (key) => {
         if (key == 1) {
             setskillbox(["#404040", "transparent", "transparent"])
-            setskills([{img:RCT,name:"React Js"}, {img:tailwind,name:"Tailwind"}, {img:html,name:"HTML5"}, {img:css5,name:"CSS5"}, {img:threejs,name:"Three JS"}])
+            setskills([{ img: RCT, name: "React Js" }, { img: tailwind, name: "Tailwind" }, { img: html, name: "HTML5" }, { img: css5, name: "CSS5" }, { img: threejs, name: "Three JS" }])
         }
         if (key == 2) {
             setskillbox(["transparent", "#404040", "transparent"])
-            setskills([{img:Node,name:"Node Js"},{img:python,name:"Python"},{img:express,name:"Express Js"}])
+            setskills([{ img: Node, name: "Node Js" }, { img: python, name: "Python" }, { img: express, name: "Express Js" }])
         }
         if (key == 3) {
             setskillbox(["transparent", "transparent", "#404040"])
-            setskills([{img:mongodb,name:"MongoDB"},{img:C,name:"C++"},{img:mysql,name:"MySQL"}])
+            setskills([{ img: mongodb, name: "MongoDB" }, { img: C, name: "C++" }, { img: mysql, name: "MySQL" }])
         }
     }
 
@@ -152,7 +152,9 @@ export default function Home() {
                     <div>
                         <h2>Hello I'm <b>TOSHAN S MAINDAN</b></h2>
                         <span>{typeEffect}<Cursor cursorStyle='|' /></span>
-                        <button onClick={() => downloadFile(RESUME_PDF_FILE)}>Download Resume</button>
+                        <a href={googleDriveLink} download="example.pdf">
+                            <button>Download PDF</button>
+                        </a>
                     </div>
                     <img src={HomePage} id="masterimg" alt="" data-scroll data-scroll-speed="-1" />
                 </section>
@@ -290,7 +292,7 @@ export default function Home() {
                             {
                                 skills.map((i) => (
                                     <b>
-                                        <img src={i.img}/>
+                                        <img src={i.img} />
                                         <h1>{i.name}</h1>
                                     </b>
                                 ))
