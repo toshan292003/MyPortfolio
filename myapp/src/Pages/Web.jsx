@@ -68,7 +68,6 @@ export default function Web(){
                     }
                 </div>
             </div>
-
             <Footer></Footer>
         </>
     )
