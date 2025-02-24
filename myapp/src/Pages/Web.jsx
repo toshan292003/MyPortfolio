@@ -6,6 +6,7 @@ import Navbar from "./navbar";
 import SmartHome from "../Images/Projects/SmartHome.png";
 import AmbulanceR from "../Images/Projects/AmbulanceR.png";
 import Water from "../Images/Projects/Water Purity Tracker.png";
+import ReachInbox from "../Images/Projects/reachinbox.png";
 
 export default function Web(){
 
@@ -17,6 +18,14 @@ export default function Web(){
             Links : [   "https://jmvimpex.in/","https://www.figma.com/design/VEAYVe2AMoDEC8l2s4gEuE/JMV-Impex-UI-Design?node-id=8-25&t=GixhHkfeXkFMPLtL-0"],
             Learnings : ["Effective team and client communication strategies.","Understanding the basic workflow of website development projects."]
         }
+        },
+        {name:"ReachInbox", Image:ReachInbox,
+        Project : {
+            desc:"I developed an email dashboard using React.js as part of an assignment for the recruitment process at ReachInbox. The project features an intuitive interface for managing emails, with functionalities such as inbox organization, email categorization, and quick actions like replying, deleting, and archiving. Its responsive design and efficient state management ensure a smooth user experience.",
+            awards : ["I was selected for a job at ReachInbox after successfully completing their recruitment assignment."],
+            Links : ["https://toshan-reachinbox-assignment.vercel.app/"],
+            Learnings : ["Gained hands-on experience with API integration.","Improved skills in connecting front-end components to back-end services.","Enhanced understanding of efficient data flow management."]
+            }
         },
         {name:"Smart House", Image:SmartHome,
         Project : {
@@ -59,7 +68,6 @@ export default function Web(){
                     }
                 </div>
             </div>
-
             <Footer></Footer>
         </>
     )
