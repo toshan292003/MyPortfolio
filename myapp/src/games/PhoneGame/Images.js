@@ -25,4 +25,31 @@ import Weather from "./images/Weather.png"
 import X from "./images/X.png"
 import Youtube from "./images/Youtube.png"
 
-export {Appstore,Calculator,calender,Camera,Clock,Facetime,Files,GarageBand,health,IMaps,Instagram,Lists,Mail,Messages,Music,Notes,Phone,Photos,Safari,Settings,Threads,Twitter,Watsapp,Weather,X,Youtube}
+export const images = {
+    Appstore:Appstore,
+    Calculator:Calculator,
+    calender:calender,
+    Camera:Camera,
+    Clock:Clock,
+    Facetime:Facetime,
+    Files:Files,
+    GarageBand:GarageBand,
+    health:health,
+    IMaps:IMaps,
+    Instagram:Instagram,
+    Lists:Lists,
+    Mail:Mail,
+    Messages:Messages,
+    Music:Music,
+    Notes:Notes,
+    Phone:Phone,
+    Photos:Photos,
+    Safari:Safari,
+    Settings:Settings,
+    Threads:Threads,
+    Twitter:Twitter,
+    Watsapp:Watsapp,
+    Weather:Weather,
+    X:X,
+    Youtube:Youtube
+}
