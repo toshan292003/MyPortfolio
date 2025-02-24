@@ -7,6 +7,7 @@ import Web from './Pages/Web';
 import Designing from './Pages/Designing';
 import Visualizations from './Pages/Visualizations';
 import GameOfLife from './games/gameoflife';
+import PhoneGame from './games/PhoneGame/PhoneGame';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/portfolio/designing' element={<Designing/>}></Route>
           <Route path='/portfolio/games' element={<Visualizations/>}></Route>
           <Route path='/games/gameoflife' element={<GameOfLife/>}></Route>
+          <Route path='/games/phonegame' element={<PhoneGame/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>

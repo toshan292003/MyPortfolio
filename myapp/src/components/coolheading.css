@@ -24,8 +24,23 @@
     z-index: -10;
     width: 100vw;
     text-align: center;
+
+    animation-name: nameofanim;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
 }
 
+@keyframes nameofanim {
+    0%{
+        background-color: white;
+    }
+    50%{
+        background-color: black;
+    }
+    100%{
+        background-color: red;
+    }
+}
 
 
 

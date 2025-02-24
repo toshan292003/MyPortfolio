@@ -1,0 +1,15 @@
+.icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    transition: all 0.5s ease;
+}
+
+.icons-container img{
+    width: 70px;
+    height: 70px;
+}
+
+.brighten{
+    background-color: white;
+}
