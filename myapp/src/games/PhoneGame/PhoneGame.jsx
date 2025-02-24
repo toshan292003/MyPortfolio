@@ -145,7 +145,7 @@ export default function PhoneGame() {
                     ))
                 }
             </div>
-            <button onClick={StartGame}>Browse All Projects</button>
+            <button onClick={StartGame}>Start Game</button>
             {
                 selectedindex !== null ?
                 <>
