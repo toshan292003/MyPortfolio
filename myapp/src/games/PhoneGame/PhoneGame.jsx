@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-
 import { images } from "./Images"
 import "./PhoneGame.css"
 import IconComponent from "./IconComponent";
@@ -80,10 +79,6 @@ export default function PhoneGame() {
         challenges: ["Threadssomething1", "Threadssomething2", "Threadssomething3", "Threadssomething4", "Threadssomething5", "Threadssomething6"]
 
     }, {
-        image: images.Twitter,
-        challenges: ["Twittersomething1", "Twittersomething2", "Twittersomething3", "Twittersomething4", "Twittersomething5", "Twittersomething6"]
-
-    }, {
         image: images.Watsapp,
         challenges: ["Watsappsomething1", "Watsappsomething2", "Watsappsomething3", "Watsappsomething4", "Watsappsomething5", "Watsappsomething6"]
 
@@ -114,11 +109,9 @@ export default function PhoneGame() {
                 console.log("Highlighted random index : ",a)
                 setHighlightedindex(a);
                 if (count === delays.length - 1) {
-                    console.log("Final Selected challenge topic : ",a);
                     setSelectedindex(a)
                     let b = apps[a].challenges[Math.floor(Math.random() * apps[a].challenges.length)]
                     setSelectedChallenge(b)
-                    console.log("Final Selected challenge index : ",b);
                 }
                 const audio = new Audio("/sounds/TINGSOUNDEFFECT.mp3")
                 audio.volume = 0.2
@@ -132,26 +125,29 @@ export default function PhoneGame() {
     };
     return (
         <>
-            <h1>Phone Game</h1>
-            <div className="icons-container">
-                {
-                    apps.map((img, index) => (
-                        <IconComponent
+            <section className="phonegame-container">
+                <h1>Phone Game</h1>
+                <div className="icons-container">
+                    {
+                        apps.map((img, index) => (
+                            <IconComponent
                             image={img.image}
                             highlight={highlightedindex === index}
                             select={selectedindex === index}
                             challenges={img.challenges}
-                        />
-                    ))
-                }
-            </div>
-            <button onClick={StartGame}>Start Game</button>
-            {
-                selectedindex !== null ?
-                <>
-                    <p>{selectedChallenge}</p>
-                </>:null
-            }
+                            />
+                        ))
+                    }
+                </div>
+                <button onClick={StartGame}>Start Game</button>
+                <div className={`challenge-display-container ${selectedindex !== null ? "--active" : ""}`}>
+                    <div>
+                        <button onClick={()=>{setSelectedindex(null)}}>&#x274c;</button>
+                        <h3>Your challenge : </h3>
+                        <p>{selectedChallenge}</p>
+                    </div>
+                </div>
+            </section>
         </>
     )
 }

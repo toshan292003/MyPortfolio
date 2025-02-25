@@ -19,7 +19,6 @@ import Photos from "./images/Photos.png"
 import Safari from "./images/Safari.png"
 import Settings from "./images/Settings.png"
 import Threads from "./images/Threads.png"
-import Twitter from "./images/Twitter.png"
 import Watsapp from "./images/Watsapp.png"
 import Weather from "./images/Weather.png"
 import X from "./images/X.png"
@@ -47,7 +46,6 @@ export const images = {
     Safari:Safari,
     Settings:Settings,
     Threads:Threads,
-    Twitter:Twitter,
     Watsapp:Watsapp,
     Weather:Weather,
     X:X,
