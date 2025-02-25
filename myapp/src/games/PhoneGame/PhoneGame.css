@@ -1,10 +1,44 @@
 .phonegame-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     height: 100vh;
+    gap: 30px;
+}
+.phonegame-container section{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    gap: 20px;
+}
+.phonegame-container section p,
+.phonegame-container section li{
+    text-align: justify;
+    font-size: 0.8rem;
+    list-style-type: none;
+    color: rgba(255, 255, 255, 0.519);
+}
+.phonegame-container section p span,
+.phonegame-container section li span{
+    color: yellow;
+    opacity: 100% !important;
+}
+.phonegame-container button{
+    background-color: rgb(43, 113, 226);
+    padding: 7px 15px;
+    font-size: 1rem;
+    border: transparent;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+.phonegame-container button:hover{
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.482),
+                0px 0px 10px rgba(255, 255, 255, 0.267),
+                0px 0px 30px rgba(255, 255, 255, 0.14);
+    cursor: pointer;
 }
 
 .icons-container{
@@ -71,4 +105,13 @@
 .challenge-display-container button:hover{
     background-color: #333333;
     cursor: pointer;
+}
+
+@media (max-width: 399px) {
+    .phonegame-container{
+        flex-direction: column;
+    }
+    .phonegame-container section{
+        max-width: 80%;
+    }
 }

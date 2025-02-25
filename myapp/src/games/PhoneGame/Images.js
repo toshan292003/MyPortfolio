@@ -23,6 +23,10 @@ import Watsapp from "./images/Watsapp.png"
 import Weather from "./images/Weather.png"
 import X from "./images/X.png"
 import Youtube from "./images/Youtube.png"
+import Spotify from "./images/Spotify.png"
+import Snapchat from "./images/Snapchat.png"
+import GoogleMaps from "./images/GoogleMaps.png"
+import Linkedin from "./images/Linkedin.png"
 
 export const images = {
     Appstore:Appstore,
@@ -44,6 +48,10 @@ export const images = {
     Phone:Phone,
     Photos:Photos,
     Safari:Safari,
+    Linkedin:Linkedin,
+    Spotify:Spotify,
+    Snapchat:Snapchat,
+    GoogleMaps:GoogleMaps,
     Settings:Settings,
     Threads:Threads,
     Watsapp:Watsapp,
