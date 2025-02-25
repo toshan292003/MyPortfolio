@@ -5,94 +5,50 @@ import IconComponent from "./IconComponent";
 
 export default function PhoneGame() {
     const apps = [{
-        image: images.Appstore,
-        challenges: ["Appstoresomething1", "Appstoresomething2", "Appstoresomething3", "Appstoresomething4", "Appstoresomething5", "Appstoresomething6"]
-    }, {
-        image: images.Calculator,
-        challenges: ["Calculatorsomething1", "Calculatorsomething2", "Calculatorsomething3", "Calculatorsomething4", "Calculatorsomething5", "Calculatorsomething6"]
-    }, {
-        image: images.calender,
-        challenges: ["calendersomething1", "calendersomething2", "calendersomething3", "calendersomething4", "calendersomething5", "calendersomething6"]
-    }, {
         image: images.Camera,
-        challenges: ["Camerasomething1", "Camerasomething2", "Camerasomething3", "Camerasomething4", "Camerasomething5", "Camerasomething6"]
+        challenges: ["Photo Bomb someone who is taking pictures.", "Take a picture of you mewing and post it on IG.", "Record yourself dancing to a song selected by your opponents and post it on IG.", "Recreate a trending reel on IG.", "Camerasomething5", "Camerasomething6"]
     }, {
         image: images.Clock,
-        challenges: ["Clocksomething1", "Clocksomething2", "Clocksomething3", "Clocksomething4", "Clocksomething5", "Clocksomething6"]
+        challenges: ["Show us your Alarm schedule"]
     }, {
         image: images.Facetime,
-        challenges: ["Facetimesomething1", "Facetimesomething2", "Facetimesomething3", "Facetimesomething4", "Facetimesomething5", "Facetimesomething6"]
-
-    }, {
-        image: images.Files,
-        challenges: ["Filessomething1", "Filessomething2", "Filessomething3", "Filessomething4", "Filessomething5", "Filessomething6"]
-
-    }, {
-        image: images.GarageBand,
-        challenges: ["GarageBandsomething1", "GarageBandsomething2", "GarageBandsomething3", "GarageBandsomething4", "GarageBandsomething5", "GarageBandsomething6"]
-
-    }, {
-        image: images.IMaps,
-        challenges: ["GarageBandsomething1", "GarageBandsomething2", "GarageBandsomething3", "GarageBandsomething4", "GarageBandsomething5", "GarageBandsomething6"]
+        challenges: ["Who was the last person you facetimed?","Whats your current ringtone?"]
 
     }, {
         image: images.Instagram,
-        challenges: ["Instagramsomething1", "Instagramsomething2", "Instagramsomething3", "Instagramsomething4", "Instagramsomething5", "Instagramsomething6"]
-
-    }, {
-        image: images.Lists,
-        challenges: ["Listssomething1", "Listssomething2", "Listssomething3", "Listssomething4", "Listssomething5", "Listssomething6"]
+        challenges: ["Show us your most recent chat with your crush on IG", "What was the last conversation you had with your spouce/gf on IG", "Show us yout IG feed", "Show us your Instagram saved posts", "Take a video of you twerking and post it on an IG story", "Who's on the top #1 in your IG share list?","Show your archived posts","Show your archived stories.","Show your's crush's instagram page.","Recreate a trending reel and post it."]
 
     }, {
         image: images.Mail,
-        challenges: ["Mailsomething1", "Mailsomething2", "Mailsomething3", "Mailsomething4", "Mailsomething5", "Mailsomething6"]
+        challenges: ["What was the last mail you received?", "Send a mail to your manager saying that you are getting married.", "Send a mail to ", "How many mail ID's do you have?", "Mailsomething5", "Mailsomething6"]
 
     }, {
         image: images.Messages,
-        challenges: ["Messagessomething1", "Messagessomething2", "Messagessomething3", "Messagessomething4", "Messagessomething5", "Messagessomething6"]
+        challenges: ["What was the last message you received on Messages by a Human.", "Messagessomething2", "Messagessomething3", "Messagessomething4", "Messagessomething5", "Messagessomething6"]
 
     }, {
         image: images.Music,
-        challenges: ["Musicsomething1", "Musicsomething2", "Musicsomething3", "Musicsomething4", "Musicsomething5", "Musicsomething6"]
+        challenges: ["Show your previous year wrapped on Spotify", "What's your favourite music artist?", "What's your favourite song?", "You have to sing a song which will be picked by your opponents.", "Sing your favourite song.", "What was the first song you ever heard when you started listening to music.","What's that one artist who is really famous and hyped up, but you feel is overrated?"]
 
     }, {
         image: images.Notes,
-        challenges: ["Notessomething1", "Notessomething2", "Notessomething3", "Notessomething4", "Notessomething5", "Notessomething6"]
+        challenges: ["What's in your bucket list?","Show what's in your notes app."]
 
     }, {
         image: images.Phone,
-        challenges: ["Phonesomething1", "Phonesomething2", "Phonesomething3", "Phonesomething4", "Phonesomething5", "Phonesomething6"]
+        challenges: ["What did you save your crush/gf's number as?", "Show the contact photo you have set for your crush/gf's number", "When was the last time you called your crush/gf.", "Which was the most recent call you had?", "Call your and tell them you still like them.", "Call your crush and tell them you like them.","What's your current ringtone?","Set your ringtone to any chinese ringtone for a week.","What was your most favourite ringtone?"]
 
     }, {
         image: images.Photos,
-        challenges: ["Photossomething1", "Photossomething2", "Photossomething3", "Photossomething4", "Photossomething5", "Photossomething6"]
-
-    }, {
-        image: images.Safari,
-        challenges: ["Safarisomething1", "Safarisomething2", "Safarisomething3", "Safarisomething4", "Safarisomething5", "Safarisomething6"]
-
-    }, {
-        image: images.Settings,
-        challenges: ["Settingssomething1", "Settingssomething2", "Settingssomething3", "Settingssomething4", "Settingssomething5", "Settingssomething6"]
-    }, {
-        image: images.Threads,
-        challenges: ["Threadssomething1", "Threadssomething2", "Threadssomething3", "Threadssomething4", "Threadssomething5", "Threadssomething6"]
+        challenges: ["Show a picture of your last vacation", "Show a picture of your crush/gf", "Show a picture of you with your gf/crush", "Let your opponents post a random picture from your gallery on IG.", "Show your hidden pictures folder", "Show your favourites folder.","Show your most recently deleted picture.","Show a childhood picture of you."]
 
     }, {
         image: images.Watsapp,
-        challenges: ["Watsappsomething1", "Watsappsomething2", "Watsappsomething3", "Watsappsomething4", "Watsappsomething5", "Watsappsomething6"]
-
-    }, {
-        image: images.Weather,
-        challenges: ["Weathersomething1", "Weathersomething2", "Weathersomething3", "Weathersomething4", "Weathersomething5", "Weathersomething6"]
-
-    }, {
-        image: images.X,
-        challenges: ["Xsomething1", "Xsomething2", "Xsomething3", "Xsomething4", "Xsomething5", "Xsomething6"]
+        challenges: ["What's your last conversation with your gf", "What was your last conversation with your crush", "Send a message saying that you have a gf in your family group", "What's your watsapp chat wallpaper?", "What's the name of the most controvertial Boys group that you are a part of", "Do you have a work related unofficial watsapp group?"]
 
     }, {
         image: images.Youtube,
-        challenges: ["Youtubesomething1", "Youtubesomething2", "Youtubesomething3", "Youtubesomething4", "Youtubesomething5", "Youtubesomething6"]
+        challenges: ["Show your watch later playlist.", "What was the last thing you searched on youtube.", "Did you ever try to search for exclusive videos on youtube?", "Show your youtube feed.", "What's your most favourite documentary video.", "What's your most favourite live performance?","What's your most favourite youtube video.","Who is your favourite youtuber?"]
 
     }];
 
@@ -101,8 +57,8 @@ export default function PhoneGame() {
     const [selectedChallenge, setSelectedChallenge] = useState(null);
     const StartGame = () => {
         let count = 0;
+        setSelectedindex(null)
         const delays = [200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 400, 400, 400, 600, 1000, 1400, 2000]; // Progressive delays
-
         const updateSelection = () => {
             if (count < delays.length) {
                 let a = Math.floor(Math.random() * apps.length)
@@ -112,6 +68,10 @@ export default function PhoneGame() {
                     setSelectedindex(a)
                     let b = apps[a].challenges[Math.floor(Math.random() * apps[a].challenges.length)]
                     setSelectedChallenge(b)
+                    const audio = new Audio("/sounds/TINGSOUNDEFFECT.mp3")
+                    audio.volume = 0.2
+                    audio.play()
+                    setTimeout(() => {}, 1000);
                 }
                 const audio = new Audio("/sounds/TINGSOUNDEFFECT.mp3")
                 audio.volume = 0.2
@@ -120,7 +80,6 @@ export default function PhoneGame() {
                 count++;
             }
         };
-
         updateSelection(); // Start the recursive timeout loop
     };
     return (
@@ -143,7 +102,11 @@ export default function PhoneGame() {
                 <div className={`challenge-display-container ${selectedindex !== null ? "--active" : ""}`}>
                     <div>
                         <button onClick={()=>{setSelectedindex(null)}}>&#x274c;</button>
-                        <h3>Your challenge : </h3>
+                        {
+                            selectedindex?
+                            <img src={apps[selectedindex].image}/>
+                            :null
+                        }
                         <p>{selectedChallenge}</p>
                     </div>
                 </div>

@@ -49,7 +49,8 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    max-width: 400px;
+    text-align: center;
+    max-width: 300px;
 }
 
 .challenge-display-container button{
