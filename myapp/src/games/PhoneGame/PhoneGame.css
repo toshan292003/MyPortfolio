@@ -48,7 +48,8 @@
     transition: all 0.5s ease;
 }
 
-.icons-container img{
+.icons-container img,
+.phonegame-container img{
     width: 70px;
     height: 70px;
 }
@@ -114,4 +115,8 @@
     .phonegame-container section{
         max-width: 80%;
     }
+    .challenge-display-container div{
+        max-width: 200px;
+    }
+    
 }
