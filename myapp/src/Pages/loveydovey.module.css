@@ -27,9 +27,13 @@
     justify-content: center;
     padding: 50px;
 }
-.box p{
+.box p,
+.box span{
     color: var(--dark-pink);
     margin-bottom: 20px;
+}
+.box span{
+    font-size: 10vh;
 }
 .box button{
     outline: none;
