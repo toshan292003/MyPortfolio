@@ -19,7 +19,7 @@ export default function PhoneGame() {
 
     }, {
         image: images.Snapchat,
-        challenges: ["Use a voice-changing filter and record yourself saying something super serious.", "Show the cringiest snap in your memories section.", "Pick a random object, post a snap of it, and narrate a fake emotional love story about it.", "Take a boring picture and draw a masterpiece on it using Snapchat’s drawing tool.", "Post a snap that says \"If you're watching this, I know you secretly love me.\" and see who replies.", "Post \"Finally told my crush how I feel...\" and let people go crazy wondering who it is.", "Use the funniest face filter you can find and send a 10-second motivational speech to your bestfriend."]
+        challenges: ["Use a voice-changing filter and record yourself saying something super serious.", "Show the cringiest snap in your memories section.", "Pick a random object, post a snap of it, and narrate a fake emotional love story about it.", "Take a boring picture and draw a masterpiece on it using Snapchat's drawing tool.", "Post a snap that says \"If you're watching this, I know you secretly love me.\" and see who replies.", "Post \"Finally told my crush how I feel...\" and let people go crazy wondering who it is.", "Use the funniest face filter you can find and send a 10-second motivational speech to your bestfriend."]
 
     }, {
         image: images.Spotify,

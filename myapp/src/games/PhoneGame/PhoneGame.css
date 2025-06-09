@@ -8,7 +8,6 @@
     gap: 30px;
 }
 .phonegame-container section{
-    padding-top: 50px;
     display: flex;
     flex-direction: column;
     max-width: 40%;
@@ -113,6 +112,7 @@
         flex-direction: column;
     }
     .phonegame-container section{
+        padding-top: 50px;
         max-width: 80%;
     }
     .challenge-display-container div{

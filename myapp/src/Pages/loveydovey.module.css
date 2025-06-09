@@ -1,0 +1,45 @@
+*{
+    --dark-pink: rgb(255, 0, 149);
+    --pink: rgb(255, 137, 204);
+    --light-pink: rgb(255, 198, 239);
+}
+.maincontainer{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.background{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    background-color: var(--pink);
+}
+.box{
+    background-color: var(--light-pink);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.box p{
+    color: var(--dark-pink);
+    margin-bottom: 20px;
+}
+.box button{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.box button:nth-child(1){
+    background-color: var(--dark-pink);
+}
+.box button:nth-child(2){
+    color: var(--dark-pink);
+}
